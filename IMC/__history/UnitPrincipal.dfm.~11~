@@ -1,0 +1,168 @@
+object frmIMC: TfrmIMC
+  Left = 0
+  Top = 0
+  BorderStyle = bsSingle
+  Caption = 'IMC - '#205'ndice de Massa Corp'#243'ria'
+  ClientHeight = 471
+  ClientWidth = 494
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  PixelsPerInch = 96
+  TextHeight = 13
+  object lblTratamento: TLabel
+    Left = 24
+    Top = 24
+    Width = 56
+    Height = 13
+    Caption = 'Tratamento'
+  end
+  object lblNome: TLabel
+    Left = 256
+    Top = 24
+    Width = 27
+    Height = 13
+    Caption = 'Nome'
+  end
+  object lblPeso: TLabel
+    Left = 24
+    Top = 104
+    Width = 96
+    Height = 13
+    Caption = 'Informe o Peso (Kg)'
+  end
+  object lblAltura: TLabel
+    Left = 256
+    Top = 104
+    Width = 97
+    Height = 13
+    Caption = 'Informe a altura (m)'
+  end
+  object cbxTratamento: TComboBox
+    Left = 24
+    Top = 43
+    Width = 193
+    Height = 21
+    Sorted = True
+    TabOrder = 0
+    Items.Strings = (
+      'Sr.'
+      'Sra.'
+      'Srta.')
+  end
+  object edtPeso: TEdit
+    Left = 24
+    Top = 123
+    Width = 193
+    Height = 21
+    TabOrder = 1
+  end
+  object edtAltura: TEdit
+    Left = 256
+    Top = 123
+    Width = 209
+    Height = 21
+    TabOrder = 2
+  end
+  object btnCalcular: TButton
+    Left = 24
+    Top = 263
+    Width = 96
+    Height = 25
+    Caption = 'Calcular IMC'
+    TabOrder = 3
+    OnClick = btnCalcularClick
+  end
+  object btnClassificarPeso: TButton
+    Left = 202
+    Top = 263
+    Width = 96
+    Height = 25
+    Caption = 'Classificar Peso'
+    TabOrder = 4
+  end
+  object btnFechar: TButton
+    Left = 369
+    Top = 263
+    Width = 96
+    Height = 25
+    Caption = 'Fechar'
+    TabOrder = 5
+    OnClick = btnFecharClick
+  end
+  object edtNome: TEdit
+    Left = 256
+    Top = 43
+    Width = 209
+    Height = 21
+    TabOrder = 6
+  end
+  object gbAlimentos: TGroupBox
+    Left = 24
+    Top = 166
+    Width = 441
+    Height = 83
+    Caption = 'Prefer'#234'ncias Alimentares'
+    TabOrder = 7
+    object cbFrutas: TCheckBox
+      Left = 19
+      Top = 24
+      Width = 97
+      Height = 17
+      Caption = 'Frutas'
+      TabOrder = 0
+    end
+    object cbxCarnes: TCheckBox
+      Left = 19
+      Top = 56
+      Width = 97
+      Height = 17
+      Caption = 'Carnes'
+      TabOrder = 1
+    end
+    object cbxCereais: TCheckBox
+      Left = 329
+      Top = 24
+      Width = 97
+      Height = 17
+      Caption = 'Cereais'
+      TabOrder = 2
+    end
+    object cbxDoces: TCheckBox
+      Left = 177
+      Top = 56
+      Width = 97
+      Height = 17
+      Caption = 'Doces'
+      TabOrder = 3
+    end
+    object cbxOutros: TCheckBox
+      Left = 329
+      Top = 56
+      Width = 97
+      Height = 17
+      Caption = 'Outros'
+      TabOrder = 4
+    end
+    object cbxVerduras: TCheckBox
+      Left = 177
+      Top = 24
+      Width = 97
+      Height = 17
+      Caption = 'Verduras'
+      TabOrder = 5
+    end
+  end
+  object mmResultados: TMemo
+    Left = 24
+    Top = 312
+    Width = 441
+    Height = 121
+    Enabled = False
+    TabOrder = 8
+  end
+end

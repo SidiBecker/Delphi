@@ -1,0 +1,121 @@
+unit UnitPrincipal;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, Vcl.Buttons;
+
+type
+  TFormPrincipal = class(TForm)
+    lblTitulo: TLabel;
+    lblDescricao: TLabel;
+    edtDescricao: TEdit;
+    lblQtdePessoas: TLabel;
+    edtQtdePessoas: TEdit;
+    lblConsumoBebidas: TLabel;
+    edtBebidaConsumida: TEdit;
+    lblBebidaQtdeConsumida: TLabel;
+    lblBebidaPrecoUnitario: TLabel;
+    edtBebidaPrecoUnitario: TEdit;
+    edtResultadoBebidas: TEdit;
+    lblValorBebidas: TLabel;
+    btnCalcularBebidas: TBitBtn;
+    lblAlimentosQtdeConsumida: TLabel;
+    edtAlimentoQtdeConsumida: TEdit;
+    edtAlimentosPrecoUnitario: TEdit;
+    lblAlimentosPrecoUnitario: TLabel;
+    edtResultadoAlimentos: TEdit;
+    lblResultadoAlimentos: TLabel;
+    btnCalcularAlimentos: TBitBtn;
+    lblAlimentos: TLabel;
+    btnGerarValores: TBitBtn;
+    lblTotalPessoas: TLabel;
+    lblTotalGastos: TLabel;
+    lblValorPorPessoa: TLabel;
+    btnFechar: TBitBtn;
+    rsltdTotalPessoas: TLabel;
+    rsltdTotalGastos: TLabel;
+    rsltdValorPorPessoa: TLabel;
+    procedure btnFecharClick(Sender: TObject);
+    procedure btnGerarValoresClick(Sender: TObject);
+    procedure btnCalcularBebidasClick(Sender: TObject);
+    procedure btnCalcularAlimentosClick(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  FormPrincipal: TFormPrincipal;
+
+implementation
+
+{$R *.dfm}
+
+procedure TFormPrincipal.btnCalcularAlimentosClick(Sender: TObject);
+Var
+
+
+ qtdeAlimentoConsumida, precoAlimento, totalAlimento: real;
+
+begin
+
+  qtdeAlimentoConsumida := StrToFloat(edtAlimentoQtdeConsumida.Text);
+  precoAlimento := StrToFloat(edtAlimentosPrecoUnitario.Text);
+  totalAlimento := qtdeAlimentoConsumida*precoAlimento;
+
+
+  edtResultadoAlimentos.text := FormatFloat('#,##0.00', totalAlimento);
+end;
+
+procedure TFormPrincipal.btnCalcularBebidasClick(Sender: TObject);
+Var
+
+  qtdeBebidaConsumida, precoBebida, totalBebida: real;
+
+begin
+
+  qtdeBebidaConsumida := StrToFloat(edtBebidaConsumida.Text);
+  precoBebida := StrToFloat(edtBebidaPrecoUnitario.Text);
+  totalBebida := qtdeBebidaConsumida*precoBebida;
+
+
+  edtResultadoBebidas.Text := FormatFloat('#,##0.00', totalBebida);
+end;
+
+procedure TFormPrincipal.btnFecharClick(Sender: TObject);
+begin
+Close;
+end;
+
+procedure TFormPrincipal.btnGerarValoresClick(Sender: TObject);
+Var
+qtdePessoas, qtdeBebidaConsumida, qtdeAlimentoConsumido, totalPessoas : integer;
+precoBebida, precoAlimento, totalBebida, totalAlimento, totalGastos, valorPorPessoa: real;
+
+begin
+
+  btnCalcularBebidas.Click;
+
+  btnCalcularAlimentos.Click;
+
+  totalBebida:= StrToFloat(FormatFloat('#,##0.00', edtResultadoBebidas.Text));
+  totalAlimento StrToFloat(FormatFloat('#,##0.00', edtResultadoAlimentos.Text);
+
+  totalGastos := totalBebida + totalAlimento;
+
+  valorPorPessoa := totalGastos/qtdePessoas;
+
+  rsltdTotalPessoas.Caption := edtQtdePessoas.Text + ' pessoas.';
+  rsltdTotalGastos.Caption := FormatFloat('#,##0.00',totalGastos);
+  rsltdValorPorPessoa.Caption := FormatFloat('#,##0.00',valorPorPessoa);
+
+
+  rsltdTotalPessoas.Visible := true;
+  rsltdTotalGastos.Visible := true;
+  rsltdValorPorPessoa.Visible := true;
+end;
+
+end.

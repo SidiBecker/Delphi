@@ -1,0 +1,47 @@
+unit UnitPrincipal;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls;
+
+type
+  TFormPrincipal = class(TForm)
+    lblNum1: TLabel;
+    edtNum1: TEdit;
+    lblNum2: TLabel;
+    edtNum2: TEdit;
+    btnCalcular: TButton;
+    lblResultado: TLabel;
+    procedure btnCalcularClick(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  FormPrincipal: TFormPrincipal;
+
+implementation
+
+{$R *.dfm}
+
+procedure TFormPrincipal.btnCalcularClick(Sender: TObject);
+VAR
+
+  num1, num2 : real;
+  resultado: real;
+begin
+  num1 := StrToFloat(edtNum1.Text);
+  num2 := StrToFloat(edtNum2.Text);
+
+  resultado := num1 + num2;
+
+  lblResultado.Caption := 'Resultado: ' + FloatToStr(resultado);
+  lblResultado.Enabled := true;
+
+end;
+
+end.

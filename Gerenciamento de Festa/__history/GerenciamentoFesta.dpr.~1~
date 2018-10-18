@@ -1,0 +1,14 @@
+program GerenciamentoFesta;
+
+uses
+  Vcl.Forms,
+  UnitPrincipal in 'UnitPrincipal.pas' {FormularioPrincipa};
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.MainFormOnTaskbar := True;
+  Application.CreateForm(TFormularioPrincipa, FormularioPrincipa);
+  Application.Run;
+end.

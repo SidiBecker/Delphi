@@ -1,0 +1,56 @@
+unit UnitPrincipal;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, Vcl.ExtCtrls;
+
+type
+  TfrmPrincipal = class(TForm)
+    lblTotalDivida: TLabel;
+    edtDivida: TEdit;
+    lblMeses: TLabel;
+    edtMeses: TEdit;
+    lblTaxas: TLabel;
+    edtTaxa: TEdit;
+    lblTotal: TLabel;
+    edtTotal: TPanel;
+    btnCalcular: TButton;
+    btnFechar: TButton;
+    procedure btnFecharClick(Sender: TObject);
+    procedure btnCalcularClick(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  frmPrincipal: TfrmPrincipal;
+
+implementation
+
+{$R *.dfm}
+
+procedure TfrmPrincipal.btnCalcularClick(Sender: TObject);
+var
+  divida, total: real;
+  meses,taxa :  integer;
+begin
+  divida := StrToFloat(edtDivida.Text);
+  taxa := StrToFloat(edtTaxa.Text);
+  meses := StrToInt(edtMeses.Text);
+
+  total:= divida * (1 + (( taxa/100) * meses));
+
+  edtTotal := 'Total a Pagar: ' +  total;
+
+end;
+
+procedure TfrmPrincipal.btnFecharClick(Sender: TObject);
+begin
+Close;
+end;
+
+end.

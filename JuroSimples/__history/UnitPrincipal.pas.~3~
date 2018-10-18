@@ -1,0 +1,33 @@
+unit UnitPrincipal;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, Vcl.ExtCtrls;
+
+type
+  TfrmPrincipal = class(TForm)
+    lblTotalDivida: TLabel;
+    edtDivida: TEdit;
+    lblMeses: TLabel;
+    edtMeses: TEdit;
+    lblTaxas: TLabel;
+    edtTaxa: TEdit;
+    lblTotal: TLabel;
+    edtTotal: TPanel;
+    Button1: TButton;
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  frmPrincipal: TfrmPrincipal;
+
+implementation
+
+{$R *.dfm}
+
+end.

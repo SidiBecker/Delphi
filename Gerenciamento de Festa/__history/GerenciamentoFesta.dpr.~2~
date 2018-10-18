@@ -1,0 +1,14 @@
+program GerenciamentoFesta;
+
+uses
+  Vcl.Forms,
+  UnitPrincipal in 'UnitPrincipal.pas' {lblAlimentosPrecoUnitario};
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.MainFormOnTaskbar := True;
+  Application.CreateForm(TlblAlimentosPrecoUnitario, lblAlimentosPrecoUnitario);
+  Application.Run;
+end.
