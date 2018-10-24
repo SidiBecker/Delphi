@@ -2,9 +2,9 @@
 <BorlandProject>
 	<Transactions>
     <Transaction>2018/09/26 20:36:37.000.961,=C:\Users\sidib\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
-    <Transaction>2018/10/17 21:15:09.638,=C:\Users\sidib\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
-    <Transaction>2018/10/17 21:17:56.780,C:\Sistemas\Gerenciamento de Festa\UnitPrincipal.dfm=C:\Users\sidib\Documents\Embarcadero\Studio\Projects\Unit1.dfm</Transaction>
-    <Transaction>2018/10/17 21:17:56.780,C:\Sistemas\Gerenciamento de Festa\UnitPrincipal.pas=C:\Users\sidib\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
-    <Transaction>2018/10/17 21:18:29.584,C:\Sistemas\Gerenciamento de Festa\GerenciamentoFesta.dproj=C:\Users\sidib\Documents\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
+    <Transaction>2018/10/17 21:15:09.000.638,=C:\Users\sidib\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2018/10/17 21:17:56.000.780,C:\Users\sidib\Documents\Embarcadero\Studio\Projects\Unit1.pas=C:\Sistemas\Gerenciamento de Festa\UnitPrincipal.pas</Transaction>
+    <Transaction>2018/10/17 21:17:56.000.780,C:\Users\sidib\Documents\Embarcadero\Studio\Projects\Unit1.dfm=C:\Sistemas\Gerenciamento de Festa\UnitPrincipal.dfm</Transaction>
+    <Transaction>2018/10/17 21:18:29.000.584,C:\Users\sidib\Documents\Embarcadero\Studio\Projects\Project1.dproj=C:\Sistemas\Gerenciamento de Festa\GerenciamentoFesta.dproj</Transaction>
   </Transactions>
 </BorlandProject>

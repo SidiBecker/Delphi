@@ -18,9 +18,9 @@ object FormPrincipal: TFormPrincipal
   object lblTitulo: TLabel
     Left = 104
     Top = 8
-    Width = 281
+    Width = 282
     Height = 25
-    Caption = 'Gerenciamento de Festas'
+    Caption = 'Gerenciamento de Festas   '
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
     Font.Height = -21

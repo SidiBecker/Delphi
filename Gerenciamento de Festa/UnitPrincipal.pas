@@ -67,7 +67,7 @@ begin
   totalAlimento := qtdeAlimentoConsumida*precoAlimento;
 
 
-  edtResultadoAlimentos.text := FormatFloat('#,##0.00', totalAlimento);
+  edtResultadoAlimentos.text := FloatToStr(totalAlimento);
 end;
 
 procedure TFormPrincipal.btnCalcularBebidasClick(Sender: TObject);
@@ -82,7 +82,7 @@ begin
   totalBebida := qtdeBebidaConsumida*precoBebida;
 
 
-  edtResultadoBebidas.Text := FormatFloat('#,##0.00', totalBebida);
+  edtResultadoBebidas.Text := FloatToStr(totalBebida);
 end;
 
 procedure TFormPrincipal.btnFecharClick(Sender: TObject);
@@ -101,7 +101,11 @@ begin
 
   btnCalcularAlimentos.Click;
 
+  qtdePessoas := StrToInt(edtQtdePessoas.Text);
+
   totalBebida:= StrToFloat(edtResultadoBebidas.Text);
+
+
   totalAlimento := StrToFloat(edtResultadoAlimentos.Text);
 
   totalGastos := totalBebida + totalAlimento;
