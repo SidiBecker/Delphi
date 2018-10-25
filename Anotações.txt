@@ -1,0 +1,55 @@
+
+KeyPreview:
+	True -> Permite atalhos de teclado (ENTER - F2 - ALT + F3, Etc)
+
+
+---------------------------MULTIPLAS JANELAS-----------------------------
+
+-------- Form Pai -------------
+
+FormStyle - fsMDIForm  (Somente UM)
+
+Position -> MainFormCenter
+
+WindowState - Maximized
+
+Adicionar Menu -> Standart/MainMenu
+
+Barra de tarefas -> Win32/Tooolbar!!!!
+
+New button
+
+New separator
+
+Mostrar caption de botoes -> Na toolbar -> ShowCaption
+
+botões na barra de tarefas -> Win32/ImageList  e adicionar -> ir no componente menu, na propriedade images e adicionar a imagemList
+
+Imagens no menu -> ir nos botoes o menu, clicar em um, e ir na propriedade imageIndex escolher
+
+Imagens na barra de tarefas -> Toolbar/Images --- Se quiser trocar, clica no botao e imageIndex
+
+
+
+preencher imagem na tela inteira -> Strech -> True --- Align -> AllClient
+
+adicionar footer -> Win32/StatusBar - Duplo Clique
+
+
+Adicionar Timer -> System/Timer - Clicar duas vezes {
+Componente.Propriedade := DateToStr(Date) <-- Data
+Componente.Propriedade := TimeToStr(Time) <-- Horário
+
+
+Impedir auto create - > Project/Options/Forms/Passar para available
+}
+
+
+--/--/--/--/--/--/--/--/--/--/--/--/-/--/-
+
+-------- Form Filhos ---------- 
+
+FormStyle - fsMDIChild
+
+
+-/--/--/--/--/--/--/--/--/--/--/--/--/--/--/--/--

@@ -1,0 +1,78 @@
+object frmPrincipal: TfrmPrincipal
+  Left = 49
+  Top = 0
+  Caption = 'frmPrincipal'
+  ClientHeight = 214
+  ClientWidth = 484
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  FormStyle = fsMDIForm
+  KeyPreview = True
+  Menu = MainMenu1
+  OldCreateOrder = False
+  Position = poDesigned
+  WindowState = wsMaximized
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Footer: TStatusBar
+    Left = 0
+    Top = 189
+    Width = 484
+    Height = 25
+    Panels = <
+      item
+        Alignment = taCenter
+        Text = 'Data'
+        Width = 200
+      end
+      item
+        Alignment = taCenter
+        Text = 'GTI/74'
+        Width = 100
+      end
+      item
+        Alignment = taRightJustify
+        Text = 'SIDNEI LUIZ BECKER      '
+        Width = 50
+      end>
+    ExplicitTop = 171
+    ExplicitWidth = 447
+  end
+  object MainMenu1: TMainMenu
+    Left = 32
+    Top = 16
+    object Lanamentos1: TMenuItem
+      Caption = 'Lan'#231'amentos'
+      object Votao1: TMenuItem
+        Caption = 'Vota'#231#227'o'
+      end
+    end
+    object Relatrios1: TMenuItem
+      Caption = 'Relat'#243'rios'
+      object Pordia1: TMenuItem
+        Caption = 'Por dia'
+      end
+      object Porms1: TMenuItem
+        Caption = 'Por m'#234's'
+      end
+      object Porano1: TMenuItem
+        Caption = 'Por ano'
+      end
+    end
+    object Finalizar1: TMenuItem
+      Caption = 'Finalizar'
+      object Sair1: TMenuItem
+        Caption = 'Sair'
+      end
+    end
+  end
+  object Timer1: TTimer
+    OnTimer = Timer1Timer
+    Left = 96
+    Top = 24
+  end
+end

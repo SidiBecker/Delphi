@@ -1,0 +1,49 @@
+unit unitPrincipal;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.Menus, Vcl.ComCtrls, Vcl.ExtCtrls,
+  Vcl.Imaging.jpeg;
+
+type
+  TfrmPrincipal = class(TForm)
+    Footer: TStatusBar;
+    MainMenu1: TMainMenu;
+    menuLancamentos: TMenuItem;
+    menuRelatorios: TMenuItem;
+    menuFinalizar: TMenuItem;
+    menuSair: TMenuItem;
+    menuRelPorDia: TMenuItem;
+    menuRelPorMes: TMenuItem;
+    menuRelPorAno: TMenuItem;
+    menuVotacao: TMenuItem;
+    Timer1: TTimer;
+    Image1: TImage;
+    procedure menuSairClick(Sender: TObject);
+    procedure Timer1Timer(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  frmPrincipal: TfrmPrincipal;
+
+implementation
+
+{$R *.dfm}
+
+procedure TfrmPrincipal.menuSairClick(Sender: TObject);
+begin
+Close;
+end;
+
+procedure TfrmPrincipal.Timer1Timer(Sender: TObject);
+begin
+  Footer.Panels[0].Text := DateToStr(Date) + '  -  ' +  TimeToStr(Time);
+end;
+
+end.

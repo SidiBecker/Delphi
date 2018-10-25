@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2018/09/26 20:36:37.000.961,=C:\Users\sidib\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2018/10/24 21:21:54.000.574,=C:\Users\sidib\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2018/10/24 21:22:12.000.986,C:\Users\sidib\Documents\Embarcadero\Studio\Projects\Unit1.dfm=C:\Sistemas\SidneiBecker\unitPrincipal.dfm</Transaction>
+    <Transaction>2018/10/24 21:22:12.000.986,C:\Users\sidib\Documents\Embarcadero\Studio\Projects\Unit1.pas=C:\Sistemas\SidneiBecker\unitPrincipal.pas</Transaction>
+    <Transaction>2018/10/24 21:22:24.000.102,C:\Users\sidib\Documents\Embarcadero\Studio\Projects\Project1.dproj=C:\Sistemas\SidneiBecker\ExercicioDelphi_SidneiBecker.dproj</Transaction>
+    <Transaction>2018/10/24 21:39:40.000.154,=C:\Sistemas\SidneiBecker\Unit1.pas</Transaction>
+    <Transaction>2018/10/24 21:39:58.000.666,C:\Sistemas\SidneiBecker\Unit1.dfm=C:\Sistemas\SidneiBecker\UnitVotacao_SidneiBecker.dfm</Transaction>
+    <Transaction>2018/10/24 21:39:58.000.666,C:\Sistemas\SidneiBecker\Unit1.pas=C:\Sistemas\SidneiBecker\UnitVotacao_SidneiBecker.pas</Transaction>
+  </Transactions>
+</BorlandProject>

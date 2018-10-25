@@ -1,0 +1,86 @@
+object frmPrincipal: TfrmPrincipal
+  Left = 49
+  Top = 0
+  BorderStyle = bsSingle
+  Caption = 'GTI - Gest'#227'o da Tecnologia da Informa'#231#227'o'
+  ClientHeight = 224
+  ClientWidth = 494
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  FormStyle = fsMDIForm
+  KeyPreview = True
+  Menu = MainMenu1
+  OldCreateOrder = False
+  Position = poDesigned
+  WindowState = wsMaximized
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Image1: TImage
+    Left = 264
+    Top = 40
+    Width = 105
+    Height = 105
+  end
+  object Footer: TStatusBar
+    Left = 0
+    Top = 199
+    Width = 494
+    Height = 25
+    Panels = <
+      item
+        Alignment = taCenter
+        Width = 200
+      end
+      item
+        Alignment = taCenter
+        Text = 'GTI/74'
+        Width = 100
+      end
+      item
+        Alignment = taRightJustify
+        Text = 'SIDNEI LUIZ BECKER      '
+        Width = 50
+      end>
+    ExplicitTop = 171
+    ExplicitWidth = 447
+  end
+  object MainMenu1: TMainMenu
+    Left = 24
+    Top = 64
+    object menuLancamentos: TMenuItem
+      Caption = 'Lan'#231'amentos'
+      object menuVotacao: TMenuItem
+        Caption = 'Vota'#231#227'o'
+      end
+    end
+    object menuRelatorios: TMenuItem
+      Caption = 'Relat'#243'rios'
+      object menuRelPorDia: TMenuItem
+        Caption = 'Por dia'
+      end
+      object menuRelPorMes: TMenuItem
+        Caption = 'Por m'#234's'
+      end
+      object menuRelPorAno: TMenuItem
+        Caption = 'Por ano'
+      end
+    end
+    object menuFinalizar: TMenuItem
+      Caption = 'Finalizar'
+      object menuSair: TMenuItem
+        Caption = 'Sair'
+        OnClick = menuSairClick
+      end
+    end
+  end
+  object Timer1: TTimer
+    Interval = 100
+    OnTimer = Timer1Timer
+    Left = 72
+    Top = 56
+  end
+end

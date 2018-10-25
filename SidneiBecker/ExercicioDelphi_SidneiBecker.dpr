@@ -1,0 +1,15 @@
+program ExercicioDelphi_SidneiBecker;
+
+uses
+  Vcl.Forms,
+  unitPrincipal in 'unitPrincipal.pas' {frmPrincipal},
+  UnitVotacao_SidneiBecker in 'UnitVotacao_SidneiBecker.pas' {frmVotacao};
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.MainFormOnTaskbar := True;
+  Application.CreateForm(TfrmPrincipal, frmPrincipal);
+  Application.Run;
+end.
