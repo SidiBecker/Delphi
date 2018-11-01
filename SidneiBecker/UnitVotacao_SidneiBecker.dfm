@@ -13,9 +13,11 @@ object frmVotacao: TfrmVotacao
   Font.Name = 'Tahoma'
   Font.Style = []
   FormStyle = fsMDIChild
+  KeyPreview = True
   OldCreateOrder = False
   Position = poDesktopCenter
   Visible = True
+  OnClose = FormClose
   PixelsPerInch = 96
   TextHeight = 13
   object pnlTitulo: TPanel
@@ -69,6 +71,7 @@ object frmVotacao: TfrmVotacao
       Top = 43
       Width = 120
       Height = 21
+      NumbersOnly = True
       TabOrder = 0
     end
     object edtVot2: TEdit
@@ -76,6 +79,7 @@ object frmVotacao: TfrmVotacao
       Top = 43
       Width = 120
       Height = 21
+      NumbersOnly = True
       TabOrder = 1
     end
   end

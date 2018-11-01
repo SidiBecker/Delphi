@@ -1,0 +1,79 @@
+unit UnitPrincipal;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.Menus, Vcl.ComCtrls, Vcl.ToolWin,
+  System.ImageList, Vcl.ImgList, Vcl.ExtCtrls, Vcl.Imaging.jpeg;
+
+type
+  TfrmPrincipal = class(TForm)
+    MainMenu1: TMainMenu;
+    Cadastros1: TMenuItem;
+    Automveis1: TMenuItem;
+    Cliente1: TMenuItem;
+    Fornecedores1: TMenuItem;
+    Cidades1: TMenuItem;
+    Consultas1: TMenuItem;
+    Vendas1: TMenuItem;
+    Preos1: TMenuItem;
+    Relatrios1: TMenuItem;
+    Financeiro1: TMenuItem;
+    Cadastral1: TMenuItem;
+    Finalizar1: TMenuItem;
+    SairdoSistema1: TMenuItem;
+    ToolBar1: TToolBar;
+    ToolButton1: TToolButton;
+    ToolButton2: TToolButton;
+    ToolButton3: TToolButton;
+    ToolButton4: TToolButton;
+    ToolButton5: TToolButton;
+    ToolButton6: TToolButton;
+    ToolButton7: TToolButton;
+    ToolButton8: TToolButton;
+    ImageList1: TImageList;
+    StatusBar1: TStatusBar;
+    Timer1: TTimer;
+    Image1: TImage;
+    procedure Timer1Timer(Sender: TObject);
+    procedure Automveis1Click(Sender: TObject);
+    procedure ToolButton8Click(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  frmPrincipal: TfrmPrincipal;
+
+implementation
+
+{$R *.dfm}
+
+uses UnitCadAutomovel;
+
+procedure TfrmPrincipal.Automveis1Click(Sender: TObject);
+begin
+      if frmCadAutomovel = nil then
+      frmCadAutomovel := TfrmCadAutomovel.Create(self);
+
+      frmCadAutomovel.Show;
+end;
+
+procedure TfrmPrincipal.Timer1Timer(Sender: TObject);
+begin
+  StatusBar1.Panels[0].Text := DateToStr(Date);
+end;
+
+procedure TfrmPrincipal.ToolButton8Click(Sender: TObject);
+begin
+If Application.MessageBox('Tem Certeza de que deseja fechar o sistema?',
+ 'Fechar Sistema',mb_YesNo+mb_DefButton2+mb_IconQuestion) = Id_Yes then
+ Begin
+ Close;
+ end;
+end;
+
+end.

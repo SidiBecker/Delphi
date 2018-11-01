@@ -24,9 +24,10 @@ type
     btnCalcular: TBitBtn;
     btnLimpar: TBitBtn;
     btnFechar: TBitBtn;
-    procedure btnFecharClick(Sender: TObject);
     procedure btnCalcularClick(Sender: TObject);
     procedure btnLimparClick(Sender: TObject);
+    procedure FormClose(Sender: TObject; var Action: TCloseAction);
+    procedure btnFecharClick(Sender: TObject);
   private
     { Private declarations }
   public
@@ -43,13 +44,20 @@ implementation
 procedure TfrmVotacao.btnCalcularClick(Sender: TObject);
 Var
    votos1, votos2, totalVotos : integer;
+   chapa1, chapa2 : real;
 begin
   votos1 := StrToInt(edtVot1.Text);
   votos2 := StrToInt(edtVot2.Text);
 
   totalVotos := votos1 + votos2;
 
+  chapa1 := votos1 * 100/totalVotos;
+  chapa2 := votos2 * 100/totalVotos;
+
   lblTotalVotos.Caption :=  IntToStr(totalVotos) + ' votos.';
+  lblChapa1.Caption := FormatFloat('0.00',chapa1) + '%';
+  lblChapa2.Caption := FormatFloat('0.00', chapa2) + '%';
+
   lblTotalVotos.Visible := true;
   lblChapa1.Visible := true;
   lblChapa2.Visible := true;
@@ -69,6 +77,11 @@ edtVot2.Clear();
 lblTotalVotos.Visible := false;
 lblChapa1.Visible := false;
 lblChapa2.Visible := false;
+end;
+
+procedure TfrmVotacao.FormClose(Sender: TObject; var Action: TCloseAction);
+begin
+  FreeAndNil(frmVotacao);
 end;
 
 end.

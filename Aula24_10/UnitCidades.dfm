@@ -6,14 +6,27 @@ object frmCidade: TfrmCidade
   ClientHeight = 211
   ClientWidth = 457
   Color = clBtnFace
+  DockSite = True
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
   Font.Height = -11
   Font.Name = 'Tahoma'
   Font.Style = []
   FormStyle = fsMDIChild
+  KeyPreview = True
   OldCreateOrder = False
+  Position = poDesktopCenter
   Visible = True
+  OnClose = FormClose
   PixelsPerInch = 96
   TextHeight = 13
+  object btnFechar: TBitBtn
+    Left = 192
+    Top = 168
+    Width = 75
+    Height = 25
+    Caption = 'Fechar'
+    TabOrder = 0
+    OnClick = btnFecharClick
+  end
 end

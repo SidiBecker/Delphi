@@ -1,0 +1,63 @@
+object frmPrincipal: TfrmPrincipal
+  Left = 0
+  Top = 0
+  Caption = 'Revenda de Ve'#237'cuos XYZ'
+  ClientHeight = 201
+  ClientWidth = 447
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  FormStyle = fsMDIForm
+  KeyPreview = True
+  Menu = MainMenu1
+  OldCreateOrder = False
+  WindowState = wsMaximized
+  PixelsPerInch = 96
+  TextHeight = 13
+  object MainMenu1: TMainMenu
+    Left = 24
+    Top = 56
+    object Cadastros1: TMenuItem
+      Caption = 'Cadastros'
+      object Automveis1: TMenuItem
+        Caption = 'Autom'#243'veis'
+      end
+      object Cliente1: TMenuItem
+        Caption = 'Clientes'
+      end
+      object Fornecedores1: TMenuItem
+        Caption = 'Fornecedores'
+      end
+      object Cidades1: TMenuItem
+        Caption = 'Cidades'
+      end
+    end
+    object Consultas1: TMenuItem
+      Caption = 'Consultas'
+      object Vendas1: TMenuItem
+        Caption = 'Vendas'
+      end
+      object Preos1: TMenuItem
+        Caption = 'Pre'#231'os'
+      end
+    end
+    object Relatrios1: TMenuItem
+      Caption = 'Relat'#243'rios'
+      object Financeiro1: TMenuItem
+        Caption = 'Financeiro'
+      end
+      object Cadastral1: TMenuItem
+        Caption = 'Cadastral'
+      end
+    end
+    object Finalizar1: TMenuItem
+      Caption = 'Finalizar'
+      object SairdoSistema1: TMenuItem
+        Caption = 'Sair do Sistema'
+      end
+    end
+  end
+end

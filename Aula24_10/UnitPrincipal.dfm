@@ -46467,24 +46467,29 @@ object FormPrincipal: TFormPrincipal
       ImageIndex = 0
       ParentShowHint = False
       ShowHint = True
+      OnClick = btnCidadeClick
     end
     object btnFornecedor: TToolButton
       Left = 35
       Top = 0
       Cursor = crHandPoint
+      Hint = 'Fornecedores'
       Caption = 'btnFornecedor'
-      ImageIndex = 8
+      ImageIndex = 2
       ParentShowHint = False
       ShowHint = True
+      OnClick = btnFornecedorClick
     end
     object btnCliente: TToolButton
       Left = 70
       Top = 0
       Cursor = crHandPoint
+      Hint = 'Clientes'
       Caption = 'btnClientes'
-      ImageIndex = 2
+      ImageIndex = 3
       ParentShowHint = False
       ShowHint = True
+      OnClick = btnClienteClick
     end
     object div1: TToolButton
       Left = 105
@@ -46498,6 +46503,7 @@ object FormPrincipal: TFormPrincipal
       Left = 113
       Top = 0
       Cursor = crHandPoint
+      Hint = 'Vendas'
       Caption = 'btnVendas'
       ImageIndex = 4
       ParentShowHint = False
@@ -46507,6 +46513,7 @@ object FormPrincipal: TFormPrincipal
       Left = 148
       Top = 0
       Cursor = crHandPoint
+      Hint = 'Relat'#243'rio Fornecedores'
       Caption = 'btnRelFornecedores'
       ImageIndex = 5
       ParentShowHint = False
@@ -46516,6 +46523,7 @@ object FormPrincipal: TFormPrincipal
       Left = 183
       Top = 0
       Cursor = crHandPoint
+      Hint = 'Faturamento'
       Caption = 'btnFaturamento'
       ImageIndex = 7
       ParentShowHint = False
@@ -46533,6 +46541,7 @@ object FormPrincipal: TFormPrincipal
       Left = 226
       Top = 0
       Cursor = crHandPoint
+      Hint = 'Sair do Sistema'
       Caption = 'btnSair'
       ImageIndex = 1
       ParentShowHint = False
@@ -46573,32 +46582,36 @@ object FormPrincipal: TFormPrincipal
     Top = 88
     object Cadastros1: TMenuItem
       Caption = '&Cadastros'
-      object Cidade1: TMenuItem
+      object menuCadCidade: TMenuItem
         Caption = 'Cidade'
         ImageIndex = 1
-        OnClick = Cidade1Click
+        OnClick = menuCadCidadeClick
       end
-      object Estados1: TMenuItem
+      object menuCadEstados: TMenuItem
         Caption = 'Estados'
         ImageIndex = 0
+        OnClick = menuCadEstadosClick
       end
       object N1: TMenuItem
         Caption = '-'
       end
-      object Fornecedor1: TMenuItem
+      object menuCadFornecedor: TMenuItem
         Caption = 'Fornecedor'
         ImageIndex = 6
+        OnClick = menuCadFornecedorClick
       end
-      object Cliente1: TMenuItem
+      object menuCadCliente: TMenuItem
         Caption = 'Cliente'
         ImageIndex = 10
+        OnClick = menuCadClienteClick
       end
       object N2: TMenuItem
         Caption = '-'
       end
-      object Gerais1: TMenuItem
+      object menuCadGerais: TMenuItem
         Caption = 'Gerais'
         ImageIndex = 8
+        OnClick = menuCadGeraisClick
       end
     end
     object Consultas1: TMenuItem
@@ -46609,17 +46622,17 @@ object FormPrincipal: TFormPrincipal
       object Gerenciais1: TMenuItem
         Caption = 'Gerenciais'
         ImageIndex = 0
-        object otalVendas1: TMenuItem
+        object menuTotalVendas: TMenuItem
           Caption = 'Total Vendas'
           ImageIndex = 0
         end
-        object Faturamento1: TMenuItem
+        object menuFaturamento: TMenuItem
           Caption = 'Faturamento'
           ImageIndex = 4
         end
       end
-      object Estatsticos1: TMenuItem
-        Caption = 'Estat'#237'sticos'
+      object menuEstatisticas: TMenuItem
+        Caption = 'Estat'#237'sticas'
         ImageIndex = 5
       end
       object Cadastrais1: TMenuItem
@@ -46652,7 +46665,7 @@ object FormPrincipal: TFormPrincipal
     Left = 112
     Top = 88
     Bitmap = {
-      494C01010C001800240010001000FFFFFFFFFF10FFFFFFFFFFFFFFFF424D3600
+      494C01010C0018002C0010001000FFFFFFFFFF10FFFFFFFFFFFFFFFF424D3600
       0000000000003600000028000000400000004000000001002000000000000040
       0000000000000000000000000000000000000000000000000000000000000000
       0000000000000000000000000000000000000000000000000000000000000000

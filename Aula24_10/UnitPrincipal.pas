@@ -14,21 +14,21 @@ type
     Consultas1: TMenuItem;
     Relatrios1: TMenuItem;
     Sistema1: TMenuItem;
-    Cidade1: TMenuItem;
-    Estados1: TMenuItem;
+    menuCadCidade: TMenuItem;
+    menuCadEstados: TMenuItem;
     N1: TMenuItem;
-    Fornecedor1: TMenuItem;
-    Cliente1: TMenuItem;
+    menuCadFornecedor: TMenuItem;
+    menuCadCliente: TMenuItem;
     N2: TMenuItem;
-    Gerais1: TMenuItem;
+    menuCadGerais: TMenuItem;
     Gerenciais1: TMenuItem;
-    Estatsticos1: TMenuItem;
+    menuEstatisticas: TMenuItem;
     Cadastrais1: TMenuItem;
     Fornecedores1: TMenuItem;
     Clientes1: TMenuItem;
     Cidades1: TMenuItem;
-    otalVendas1: TMenuItem;
-    Faturamento1: TMenuItem;
+    menuTotalVendas: TMenuItem;
+    menuFaturamento: TMenuItem;
     Sair1: TMenuItem;
     ToolBar1: TToolBar;
     btnCidade: TToolButton;
@@ -46,7 +46,14 @@ type
     Timer1: TTimer;
     procedure Sair1Click(Sender: TObject);
     procedure Timer1Timer(Sender: TObject);
-    procedure Cidade1Click(Sender: TObject);
+    procedure menuCadCidadeClick(Sender: TObject);
+    procedure btnCidadeClick(Sender: TObject);
+    procedure menuCadFornecedorClick(Sender: TObject);
+    procedure btnFornecedorClick(Sender: TObject);
+    procedure menuCadEstadosClick(Sender: TObject);
+    procedure menuCadClienteClick(Sender: TObject);
+    procedure menuCadGeraisClick(Sender: TObject);
+    procedure btnClienteClick(Sender: TObject);
   private
     { Private declarations }
   public
@@ -60,9 +67,24 @@ implementation
 
 {$R *.dfm}
 
-uses UnitCidades;
+uses UnitCidades, UnitFornecedores, UnitEstados, UnitClientes, UnitGerais;
 
-procedure TFormPrincipal.Cidade1Click(Sender: TObject);
+procedure TFormPrincipal.btnCidadeClick(Sender: TObject);
+begin
+  menuCadCidade.Click;
+end;
+
+procedure TFormPrincipal.btnClienteClick(Sender: TObject);
+begin
+  menuCadCliente.Click;
+end;
+
+procedure TFormPrincipal.btnFornecedorClick(Sender: TObject);
+begin
+  menuCadFornecedor.Click;
+end;
+
+procedure TFormPrincipal.menuCadCidadeClick(Sender: TObject);
 begin
   if frmCidade = nil then
     frmCidade := TfrmCidade.Create(self);
@@ -70,9 +92,47 @@ begin
     frmCidade.Show;
 end;
 
+procedure TFormPrincipal.menuCadClienteClick(Sender: TObject);
+begin
+       if frmClientes = nil then
+    frmClientes := TfrmClientes.Create(self);
+
+    frmClientes.Show;
+end;
+
+procedure TFormPrincipal.menuCadEstadosClick(Sender: TObject);
+begin
+  if frmEstados = nil then
+    frmEstados := TfrmEstados.Create(self);
+
+    frmEstados.Show;
+end;
+
+procedure TFormPrincipal.menuCadFornecedorClick(Sender: TObject);
+begin
+    if frmFornecedores = nil then
+    frmFornecedores := TfrmFornecedores.Create(self);
+
+    frmFornecedores.Show;
+end;
+
+procedure TFormPrincipal.menuCadGeraisClick(Sender: TObject);
+begin
+     if frmGerais = nil then
+    frmGerais := TfrmGerais.Create(self);
+
+    frmGerais.Show;
+end;
+
 procedure TFormPrincipal.Sair1Click(Sender: TObject);
 begin
-Close;
+If Application.MessageBox('Tem Certeza de que deseja fechar o Sistema?',
+ 'Fechar o sistema',mb_YesNo+mb_DefButton2+mb_IconQuestion) = Id_Yes then
+ Begin
+ Close;
+//ou outros comandos
+ end;
+
 end;
 
 procedure TFormPrincipal.Timer1Timer(Sender: TObject);

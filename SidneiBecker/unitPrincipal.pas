@@ -41,7 +41,7 @@ uses UnitVotacao_SidneiBecker;
 
 procedure TfrmPrincipal.menuSairClick(Sender: TObject);
 begin
-Close;
+Close();
 end;
 
 procedure TfrmPrincipal.menuVotacaoClick(Sender: TObject);

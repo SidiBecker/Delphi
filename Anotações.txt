@@ -51,5 +51,7 @@ Impedir auto create - > Project/Options/Forms/Passar para available
 
 FormStyle - fsMDIChild
 
+Fechar -> Evento onClose: FreeAndNil(frmCidade);
+
 
 -/--/--/--/--/--/--/--/--/--/--/--/--/--/--/--/--

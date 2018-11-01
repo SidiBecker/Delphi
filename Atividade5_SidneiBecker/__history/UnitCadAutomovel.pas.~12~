@@ -1,0 +1,64 @@
+unit UnitCadAutomovel;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, Vcl.Mask, Vcl.Buttons;
+
+type
+  TfrmCadAutomovel = class(TForm)
+    lblCodAutomovel: TLabel;
+    edtCodAutomovel: TEdit;
+    cbxMarca: TComboBox;
+    lblMarca: TLabel;
+    cbxModelo: TComboBox;
+    lblModelo: TLabel;
+    lblAno: TLabel;
+    edtAno: TEdit;
+    lblPlaca: TLabel;
+    edtPlaca: TMaskEdit;
+    lblObs: TLabel;
+    edtOBS: TEdit;
+    grpbxDonoAnterior: TGroupBox;
+    lblNome: TLabel;
+    edtNome: TEdit;
+    lblCPF: TLabel;
+    edtCPF: TMaskEdit;
+    lblNascimento: TLabel;
+    edtNascimento: TMaskEdit;
+    lblCEP: TLabel;
+    edtCEP: TMaskEdit;
+    btnFechar: TBitBtn;
+    btnCancelar: TBitBtn;
+    btnSalvar: TBitBtn;
+    procedure FormClose(Sender: TObject; var Action: TCloseAction);
+    procedure btnFecharClick(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  frmCadAutomovel: TfrmCadAutomovel;
+
+implementation
+
+{$R *.dfm}
+
+procedure TfrmCadAutomovel.btnFecharClick(Sender: TObject);
+begin
+If Application.MessageBox('Tem Certeza de que deseja fechar o cadastro de veículo?',
+ 'Fechar Cadastro',mb_YesNo+mb_DefButton2+mb_IconQuestion) = Id_Yes then
+ Begin
+ Close;
+ end;
+end;
+
+procedure TfrmCadAutomovel.FormClose(Sender: TObject; var Action: TCloseAction);
+begin
+  FreeAndNil(frmCadAutomovel);
+end;
+
+end.
