@@ -1,0 +1,57 @@
+object frmPrincipal: TfrmPrincipal
+  Left = 0
+  Top = 0
+  Align = alClient
+  BorderStyle = bsSingle
+  Caption = 'Nome Programa'
+  ClientHeight = 309
+  ClientWidth = 645
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  FormStyle = fsMDIForm
+  KeyPreview = True
+  OldCreateOrder = False
+  Position = poDesktopCenter
+  WindowState = wsMaximized
+  PixelsPerInch = 96
+  TextHeight = 13
+  object footer: TStatusBar
+    Left = 0
+    Top = 290
+    Width = 645
+    Height = 19
+    Panels = <
+      item
+        Alignment = taCenter
+        Text = 'Data e Hora'
+        Width = 150
+      end
+      item
+        Alignment = taCenter
+        Text = 'GTI/74'
+        Width = 100
+      end
+      item
+        Alignment = taCenter
+        Text = 'APS 1'
+        Width = 100
+      end
+      item
+        Alignment = taCenter
+        Text = 'Copyright: Sidnei Luiz Becker'
+        Width = 200
+      end>
+    ExplicitLeft = 240
+    ExplicitTop = 72
+    ExplicitWidth = 0
+  end
+  object Timer1: TTimer
+    OnTimer = Timer1Timer
+    Left = 48
+    Top = 48
+  end
+end
