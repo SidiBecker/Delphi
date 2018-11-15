@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2018/09/26 20:36:37.000.961,=C:\Users\sidib\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2018/10/24 19:15:31.000.923,=C:\Users\sidib\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2018/10/24 19:16:11.000.422,C:\Users\sidib\Documents\Embarcadero\Studio\Projects\Unit1.pas=C:\Sistemas\Aula24_10\UnitPrincipal.pas</Transaction>
+    <Transaction>2018/10/24 19:16:11.000.422,C:\Users\sidib\Documents\Embarcadero\Studio\Projects\Unit1.dfm=C:\Sistemas\Aula24_10\UnitPrincipal.dfm</Transaction>
+    <Transaction>2018/10/24 19:16:15.000.522,C:\Users\sidib\Documents\Embarcadero\Studio\Projects\Project1.dproj=C:\Sistemas\Aula24_10\Aula24_10.dproj</Transaction>
+    <Transaction>2018/10/24 22:13:48.000.954,=C:\Sistemas\Aula24_10\Unit1.pas</Transaction>
+    <Transaction>2018/10/24 22:18:08.000.390,C:\Sistemas\Aula24_10\UnitCidades.pas=C:\Sistemas\Aula24_10\Unit1.pas</Transaction>
+    <Transaction>2018/10/24 22:18:08.000.390,C:\Sistemas\Aula24_10\UnitCidades.dfm=C:\Sistemas\Aula24_10\Unit1.dfm</Transaction>
+    <Transaction>2018/10/31 19:23:14.000.177,=C:\Sistemas\Aula24_10\Unit1.pas</Transaction>
+    <Transaction>2018/10/31 19:24:55.000.612,C:\Sistemas\Aula24_10\Unit1.dfm=C:\Sistemas\Aula24_10\UnitFornecedores.dfm</Transaction>
+    <Transaction>2018/10/31 19:24:55.000.612,C:\Sistemas\Aula24_10\Unit1.pas=C:\Sistemas\Aula24_10\UnitFornecedores.pas</Transaction>
+    <Transaction>2018/10/31 19:30:27.000.745,=C:\Sistemas\Aula24_10\Unit1.pas</Transaction>
+    <Transaction>2018/10/31 19:32:18.000.756,C:\Sistemas\Aula24_10\Unit1.dfm=C:\Sistemas\Aula24_10\UnitEstados.dfm</Transaction>
+    <Transaction>2018/10/31 19:32:18.000.756,C:\Sistemas\Aula24_10\Unit1.pas=C:\Sistemas\Aula24_10\UnitEstados.pas</Transaction>
+    <Transaction>2018/10/31 19:38:24.000.385,=C:\Sistemas\Aula24_10\Unit1.pas</Transaction>
+    <Transaction>2018/10/31 19:39:04.000.810,C:\Sistemas\Aula24_10\Unit1.pas=C:\Sistemas\Aula24_10\UnitClientes.pas</Transaction>
+    <Transaction>2018/10/31 19:39:04.000.810,C:\Sistemas\Aula24_10\Unit1.dfm=C:\Sistemas\Aula24_10\UnitClientes.dfm</Transaction>
+    <Transaction>2018/10/31 19:45:29.000.006,=C:\Sistemas\Aula24_10\Unit1.pas</Transaction>
+    <Transaction>2018/10/31 19:46:03.000.033,C:\Sistemas\Aula24_10\Unit1.pas=C:\Sistemas\Aula24_10\UnitGerais.pas</Transaction>
+    <Transaction>2018/10/31 19:46:03.000.033,C:\Sistemas\Aula24_10\Unit1.dfm=C:\Sistemas\Aula24_10\UnitGerais.dfm</Transaction>
+  </Transactions>
+</BorlandProject>

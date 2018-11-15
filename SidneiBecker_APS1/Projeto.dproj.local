@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2018/11/14 19:47:05.000.920,=C:\Users\sidi\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2018/11/14 19:47:18.000.771,C:\Users\sidi\Documents\Embarcadero\Studio\Projects\Unit1.dfm=C:\Sistemas\SidneiBecker_APS1\UnitPrincipal.dfm</Transaction>
+    <Transaction>2018/11/14 19:47:18.000.771,C:\Users\sidi\Documents\Embarcadero\Studio\Projects\Unit1.pas=C:\Sistemas\SidneiBecker_APS1\UnitPrincipal.pas</Transaction>
+    <Transaction>2018/11/14 19:47:23.000.113,C:\Users\sidi\Documents\Embarcadero\Studio\Projects\Project1.dproj=C:\Sistemas\SidneiBecker_APS1\Projeto.dproj</Transaction>
+    <Transaction>2018/11/14 20:04:27.000.537,=C:\Sistemas\SidneiBecker_APS1\Unit1.pas</Transaction>
+    <Transaction>2018/11/14 20:04:42.000.667,C:\Sistemas\SidneiBecker_APS1\Unit1.pas=C:\Sistemas\SidneiBecker_APS1\UnitCadastro.pas</Transaction>
+    <Transaction>2018/11/14 20:04:42.000.667,C:\Sistemas\SidneiBecker_APS1\Unit1.dfm=C:\Sistemas\SidneiBecker_APS1\UnitCadastro.dfm</Transaction>
+    <Transaction>2018/11/14 20:43:35.000.187,C:\Sistemas\SidneiBecker_APS1\UnitCadastro.pas=C:\Sistemas\SidneiBecker_APS1\UnitCadastroEntradas.pas</Transaction>
+    <Transaction>2018/11/14 20:43:35.000.187,C:\Sistemas\SidneiBecker_APS1\UnitCadastro.dfm=C:\Sistemas\SidneiBecker_APS1\UnitCadastroEntradas.dfm</Transaction>
+    <Transaction>2018/11/14 21:46:51.000.251,=C:\Sistemas\Aula24_10\UnitClientes.pas</Transaction>
+    <Transaction>2018/11/15 13:31:22.000.755,=C:\Sistemas\SidneiBecker_APS1\Unit1.pas</Transaction>
+    <Transaction>2018/11/15 13:31:36.000.110,C:\Sistemas\SidneiBecker_APS1\Unit1.pas=C:\Sistemas\SidneiBecker_APS1\UnitCadastroSaidas.pas</Transaction>
+    <Transaction>2018/11/15 13:31:36.000.110,C:\Sistemas\SidneiBecker_APS1\Unit1.dfm=C:\Sistemas\SidneiBecker_APS1\UnitCadastroSaidas.dfm</Transaction>
+    <Transaction>2018/11/15 14:32:04.000.283,C:\Sistemas\Aula24_10\UnitClientes.pas=</Transaction>
+    <Transaction>2018/11/15 14:40:19.375,=C:\Sistemas\SidneiBecker_APS1\Unit1.pas</Transaction>
+    <Transaction>2018/11/15 14:41:04.122,C:\Sistemas\SidneiBecker_APS1\UnitSobre.dfm=C:\Sistemas\SidneiBecker_APS1\Unit1.dfm</Transaction>
+    <Transaction>2018/11/15 14:41:04.122,C:\Sistemas\SidneiBecker_APS1\UnitSobre.pas=C:\Sistemas\SidneiBecker_APS1\Unit1.pas</Transaction>
+  </Transactions>
+</BorlandProject>

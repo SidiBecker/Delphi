@@ -1,0 +1,17 @@
+program Projeto;
+
+uses
+  Vcl.Forms,
+  UnitPrincipal in 'UnitPrincipal.pas' {frmPrincipal},
+  UnitCadastroEntradas in 'UnitCadastroEntradas.pas' {frmEntradas},
+  UnitClientes in '..\Aula24_10\UnitClientes.pas' {frmClientes};
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.MainFormOnTaskbar := True;
+  Application.CreateForm(TfrmPrincipal, frmPrincipal);
+  Application.CreateForm(TfrmClientes, frmClientes);
+  Application.Run;
+end.

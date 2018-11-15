@@ -1,0 +1,80 @@
+unit UnitPrincipal;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.ComCtrls, Vcl.ExtCtrls, Vcl.Menus,
+  Vcl.StdCtrls, Vcl.Imaging.jpeg, Vcl.ToolWin, System.ImageList, Vcl.ImgList;
+
+type
+  TfrmPrincipal = class(TForm)
+    footer: TStatusBar;
+    Timer1: TTimer;
+    menu: TMainMenu;
+    Menu1: TMenuItem;
+    Sistema1: TMenuItem;
+    Fechar1: TMenuItem;
+    C1: TMenuItem;
+    menuEntradas: TMenuItem;
+    Sadas1: TMenuItem;
+    Image1: TImage;
+    ToolBar1: TToolBar;
+    ToolButton1: TToolButton;
+    ToolButton2: TToolButton;
+    ToolButton3: TToolButton;
+    btnToolSair: TToolButton;
+    ImageList1: TImageList;
+    procedure Timer1Timer(Sender: TObject);
+    procedure Fechar1Click(Sender: TObject);
+    procedure menuEntradasClick(Sender: TObject);
+    procedure ToolButton1Click(Sender: TObject);
+    procedure btnToolSairClick(Sender: TObject);
+  private
+    { Private declarations }
+  public
+
+  end;
+
+var
+  frmPrincipal: TfrmPrincipal;
+
+implementation
+
+{$R *.dfm}
+
+uses UnitCadastroEntradas;
+
+procedure TfrmPrincipal.menuEntradasClick(Sender: TObject);
+begin
+      if frmEntradas = nil then
+      frmEntradas := TfrmEntradas.Create(self);
+      frmEntradas.Show;
+end;
+
+procedure TfrmPrincipal.btnToolSairClick(Sender: TObject);
+begin
+              Fechar1.Click
+end;
+
+procedure TfrmPrincipal.Fechar1Click(Sender: TObject);
+begin
+If Application.MessageBox('Tem certeza de que deseja fechar o sistema?',
+ 'Fechar Sistema',mb_YesNo+mb_DefButton2+mb_IconQuestion) = Id_Yes then
+ Begin
+ Close;
+ End;
+end;
+
+procedure TfrmPrincipal.Timer1Timer(Sender: TObject);
+begin
+footer.Panels[0].Text := 'Data: ' + DateToStr(Date) + ' - Horário: ' +  TimeToStr(Time);
+
+end;
+
+procedure TfrmPrincipal.ToolButton1Click(Sender: TObject);
+begin
+      menuEntradas.Click;
+end;
+
+end.
