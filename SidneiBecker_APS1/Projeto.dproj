@@ -107,28 +107,32 @@
             <Form>frmPrincipal</Form>
             <FormType>dfm</FormType>
         </DCCReference>
-        <DCCReference Include="UnitCadastroEntradas.pas">
-            <Form>frmEntradas</Form>
+        <DCCReference Include="UnitGasolina.pas">
+            <Form>frmGasolina</Form>
             <FormType>dfm</FormType>
         </DCCReference>
-        <DCCReference Include="UnitSobre.pas">
-            <Form>frmSobre</Form>
+        <DCCReference Include="UnitUsuario.pas">
+            <Form>frmUsuarios</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
+        <DCCReference Include="UnitCadastroEntradas.pas">
+            <Form>frmEntradas</Form>
             <FormType>dfm</FormType>
         </DCCReference>
         <DCCReference Include="UnitCadastroSaidas.pas">
             <Form>frmSaidas</Form>
             <FormType>dfm</FormType>
         </DCCReference>
-        <DCCReference Include="UnitGasolina.pas">
-            <Form>frmGasolina</Form>
-            <FormType>dfm</FormType>
-        </DCCReference>
         <DCCReference Include="UnitFesta.pas">
             <Form>frmFesta</Form>
             <FormType>dfm</FormType>
         </DCCReference>
-        <DCCReference Include="UnitUsuario.pas">
-            <Form>frmUsuarios</Form>
+        <DCCReference Include="UnitJuros.pas">
+            <Form>formJuros</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
+        <DCCReference Include="UnitSobre.pas">
+            <Form>frmSobre</Form>
             <FormType>dfm</FormType>
         </DCCReference>
         <BuildConfiguration Include="Release">

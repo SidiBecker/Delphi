@@ -1,0 +1,21 @@
+program Projeto;
+
+uses
+  Vcl.Forms,
+  UnitPrincipal in 'UnitPrincipal.pas' {frmPrincipal},
+  UnitCadastroEntradas in 'UnitCadastroEntradas.pas' {frmEntradas},
+  UnitCadastroSaidas in 'UnitCadastroSaidas.pas' {frmSaidas},
+  UnitGasolina in 'UnitGasolina.pas' {frmGasolina},
+  UnitFesta in 'UnitFesta.pas' {frmFesta},
+  UnitUsuario in 'UnitUsuario.pas' {frmUsuarios},
+  UnitSobre in 'UnitSobre.pas' {frmSobre};
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.MainFormOnTaskbar := True;
+  Application.CreateForm(TfrmPrincipal, frmPrincipal);
+  Application.CreateForm(TfrmSobre, frmSobre);
+  Application.Run;
+end.

@@ -5,7 +5,7 @@ object frmUsuarios: TfrmUsuarios
   BorderStyle = bsSingle
   Caption = 'Cadastro de Usu'#225'rios'
   ClientHeight = 326
-  ClientWidth = 418
+  ClientWidth = 402
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -14,6 +14,7 @@ object frmUsuarios: TfrmUsuarios
   Font.Style = []
   OldCreateOrder = False
   Position = poDesktopCenter
+  OnClose = FormClose
   PixelsPerInch = 96
   TextHeight = 13
   object Label1: TLabel
@@ -81,14 +82,14 @@ object frmUsuarios: TfrmUsuarios
     Font.Style = []
     ParentFont = False
   end
-  object Edit1: TEdit
-    Left = 25
+  object edtNome: TEdit
+    Left = 16
     Top = 30
-    Width = 385
+    Width = 370
     Height = 21
     TabOrder = 0
   end
-  object MaskEdit1: TMaskEdit
+  object edtCPF: TMaskEdit
     Left = 16
     Top = 80
     Width = 130
@@ -105,7 +106,7 @@ object frmUsuarios: TfrmUsuarios
     TabOrder = 1
     Text = '   .   .   -  '
   end
-  object RadioGroup1: TRadioGroup
+  object Sexo: TRadioGroup
     Left = 168
     Top = 64
     Width = 218
@@ -123,24 +124,24 @@ object frmUsuarios: TfrmUsuarios
     ParentFont = False
     TabOrder = 2
   end
-  object MaskEdit2: TMaskEdit
-    Left = 16
+  object edtNascimento: TMaskEdit
+    Left = 18
     Top = 147
-    Width = 130
+    Width = 128
     Height = 24
     Alignment = taCenter
-    EditMask = '99/99/999;1;_'
+    EditMask = '99/99/9999;1;_'
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
     Font.Height = -13
     Font.Name = 'Tahoma'
     Font.Style = []
-    MaxLength = 9
+    MaxLength = 10
     ParentFont = False
     TabOrder = 3
-    Text = '  /  /   '
+    Text = '  /  /    '
   end
-  object Edit2: TEdit
+  object edtCidade: TEdit
     Left = 241
     Top = 147
     Width = 145
@@ -165,6 +166,7 @@ object frmUsuarios: TfrmUsuarios
     Font.Style = []
     ParentFont = False
     TabOrder = 5
+    Text = 'UF'
     Items.Strings = (
       'AC'
       'AL'
@@ -194,7 +196,7 @@ object frmUsuarios: TfrmUsuarios
       'SE'
       'TO')
   end
-  object BitBtn1: TBitBtn
+  object btnLimpar: TBitBtn
     Left = 286
     Top = 233
     Width = 100
@@ -265,8 +267,9 @@ object frmUsuarios: TfrmUsuarios
     Layout = blGlyphRight
     ParentFont = False
     TabOrder = 6
+    OnClick = btnLimparClick
   end
-  object BitBtn2: TBitBtn
+  object btnSalvar: TBitBtn
     Left = 286
     Top = 192
     Width = 100
@@ -337,6 +340,7 @@ object frmUsuarios: TfrmUsuarios
     Layout = blGlyphRight
     ParentFont = False
     TabOrder = 7
+    OnClick = btnSalvarClick
   end
   object BitBtn3: TBitBtn
     Left = 286
@@ -409,8 +413,9 @@ object frmUsuarios: TfrmUsuarios
     Layout = blGlyphRight
     ParentFont = False
     TabOrder = 8
+    OnClick = BitBtn3Click
   end
-  object RadioGroup2: TRadioGroup
+  object radioTipo: TRadioGroup
     Left = 16
     Top = 192
     Width = 225

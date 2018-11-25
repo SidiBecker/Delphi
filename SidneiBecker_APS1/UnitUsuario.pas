@@ -10,20 +10,24 @@ uses
 type
   TfrmUsuarios = class(TForm)
     Label1: TLabel;
-    Edit1: TEdit;
-    MaskEdit1: TMaskEdit;
+    edtNome: TEdit;
+    edtCPF: TMaskEdit;
     Label2: TLabel;
-    RadioGroup1: TRadioGroup;
+    Sexo: TRadioGroup;
     Label3: TLabel;
-    MaskEdit2: TMaskEdit;
+    edtNascimento: TMaskEdit;
     Label4: TLabel;
-    Edit2: TEdit;
+    edtCidade: TEdit;
     Label5: TLabel;
     estados: TComboBox;
-    BitBtn1: TBitBtn;
-    BitBtn2: TBitBtn;
+    btnLimpar: TBitBtn;
+    btnSalvar: TBitBtn;
     BitBtn3: TBitBtn;
-    RadioGroup2: TRadioGroup;
+    radioTipo: TRadioGroup;
+    procedure BitBtn3Click(Sender: TObject);
+    procedure FormClose(Sender: TObject; var Action: TCloseAction);
+    procedure btnSalvarClick(Sender: TObject);
+    procedure btnLimparClick(Sender: TObject);
   private
     { Private declarations }
   public
@@ -36,5 +40,32 @@ var
 implementation
 
 {$R *.dfm}
+
+procedure TfrmUsuarios.btnLimparClick(Sender: TObject);
+begin
+edtNome.Clear;
+edtCPF.Clear;
+edtNascimento.Clear;
+edtCidade.Clear;
+radioTipo.ItemIndex := -1;
+Sexo.ItemIndex := -1;
+estados.ItemIndex:= -1
+end;
+
+procedure TfrmUsuarios.btnSalvarClick(Sender: TObject);
+begin
+  btnLimpar.Click;
+  Application.MessageBox('Usuário cadastrado com sucesso!','Cadastro de Usuário',mb_Ok+MB_ICONINFORMATION);
+end;
+
+procedure TfrmUsuarios.BitBtn3Click(Sender: TObject);
+begin
+Close;
+end;
+
+procedure TfrmUsuarios.FormClose(Sender: TObject; var Action: TCloseAction);
+begin
+FreeAndNil(frmUsuarios);
+end;
 
 end.

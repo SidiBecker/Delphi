@@ -3,7 +3,7 @@ object frmFesta: TfrmFesta
   Top = 0
   BorderStyle = bsSingle
   Caption = 'Gerenciamento de Festas'
-  ClientHeight = 385
+  ClientHeight = 357
   ClientWidth = 586
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
@@ -11,8 +11,10 @@ object frmFesta: TfrmFesta
   Font.Height = -11
   Font.Name = 'Tahoma'
   Font.Style = []
+  FormStyle = fsMDIChild
   OldCreateOrder = False
   Position = poDesktopCenter
+  Visible = True
   OnClose = FormClose
   PixelsPerInch = 96
   TextHeight = 13
@@ -348,7 +350,7 @@ object frmFesta: TfrmFesta
   end
   object btnFechar: TBitBtn
     Left = 481
-    Top = 352
+    Top = 319
     Width = 75
     Height = 25
     Caption = 'Fechar'

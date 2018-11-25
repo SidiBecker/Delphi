@@ -25,10 +25,21 @@ type
     btnLimpar: TBitBtn;
     grbxDescricao: TGroupBox;
     grpbxValores: TGroupBox;
+    GroupBox1: TGroupBox;
+    e1: TCheckBox;
+    CheckBox2: TCheckBox;
+    CheckBox3: TCheckBox;
+    CheckBox4: TCheckBox;
+    CheckBox5: TCheckBox;
     procedure btnCalcularClick(Sender: TObject);
     procedure btnFecharClick(Sender: TObject);
     procedure btnLimparClick(Sender: TObject);
     procedure FormClose(Sender: TObject; var Action: TCloseAction);
+    procedure e1Click(Sender: TObject);
+    procedure CheckBox2Click(Sender: TObject);
+    procedure CheckBox3Click(Sender: TObject);
+    procedure CheckBox4Click(Sender: TObject);
+    procedure CheckBox5Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -107,35 +118,40 @@ begin
 
   if n1 = 0 then
   begin
-    painelResultado.Lines.add(edtCadDescricaoEntrada.Text + ' - Valor não informado!');
+  if edtCadValorEntrada.Enabled = true then
+    painelResultado.Lines.add(edtCadDescricaoEntrada.Text + ' - Valor 1 não informado!');
   end
   else
   painelResultado.Lines.add(edtCadDescricaoEntrada.Text + sep + FloatToStr(n1));
 
     if n2 = 0 then
   begin
-    painelResultado.Lines.add(edtCadDescricaoEntrada2.Text + ' - Valor não informado!');
+  if edtCadValorEntrada2.Enabled = true then
+    painelResultado.Lines.add(edtCadDescricaoEntrada2.Text + ' - Valor 2 não informado!');
   end
   else
   painelResultado.Lines.add(edtCadDescricaoEntrada2.Text + sep + FloatToStr(n2));
 
     if n3 = 0 then
   begin
-    painelResultado.Lines.add(edtCadDescricaoEntrada3.Text + ' - Valor não informado!');
+  if edtCadValorEntrada3.Enabled = true then
+    painelResultado.Lines.add(edtCadDescricaoEntrada3.Text + ' - Valor 3 não informado!');
   end
   else
   painelResultado.Lines.add(edtCadDescricaoEntrada3.Text + sep + FloatToStr(n3));
 
     if n4 = 0 then
   begin
-    painelResultado.Lines.add(edtCadDescricaoEntrada4.Text + ' - Valor não informado!');
+  if edtCadValorEntrada4.Enabled = true then
+    painelResultado.Lines.add(edtCadDescricaoEntrada4.Text + ' - Valor 4 não informado!');
   end
   else
   painelResultado.Lines.add(edtCadDescricaoEntrada4.Text + sep + FloatToStr(n4));
 
     if n5 = 0 then
   begin
-    painelResultado.Lines.add(edtCadDescricaoEntrada5.Text + ' - Valor não informado!');
+  if edtCadValorEntrada5.Enabled = true then
+    painelResultado.Lines.add(edtCadDescricaoEntrada5.Text + ' - Valor 5 não informado!');
   end
   else
   painelResultado.Lines.add(edtCadDescricaoEntrada5.Text + sep + FloatToStr(n5));
@@ -170,6 +186,97 @@ edtCadDescricaoEntrada2.Clear;
 edtCadDescricaoEntrada3.Clear;
 edtCadDescricaoEntrada4.Clear;
 edtCadDescricaoEntrada5.Clear;
+
+end;
+
+procedure TfrmEntradas.CheckBox2Click(Sender: TObject);
+begin
+     if edtCadValorEntrada2.Enabled = false then
+   begin
+    edtCadValorEntrada2.Enabled := true;
+
+    end
+   else
+      edtCadValorEntrada2.Enabled := false;
+
+   if edtCadDescricaoEntrada2.Enabled = false then
+     begin
+      edtCadDescricaoEntrada2.Enabled := true;
+     end
+     else
+      edtCadDescricaoEntrada2.Enabled := false;
+end;
+
+procedure TfrmEntradas.CheckBox3Click(Sender: TObject);
+begin
+   if edtCadValorEntrada3.Enabled = false then
+   begin
+    edtCadValorEntrada3.Enabled := true;
+
+    end
+   else
+      edtCadValorEntrada3.Enabled := false;
+
+   if edtCadDescricaoEntrada3.Enabled = false then
+     begin
+      edtCadDescricaoEntrada3.Enabled := true;
+     end
+     else
+      edtCadDescricaoEntrada3.Enabled := false;
+end;
+
+procedure TfrmEntradas.CheckBox4Click(Sender: TObject);
+begin
+if edtCadValorEntrada4.Enabled = false then
+   begin
+    edtCadValorEntrada4.Enabled := true;
+
+    end
+   else
+      edtCadValorEntrada4.Enabled := false;
+
+   if edtCadDescricaoEntrada4.Enabled = false then
+     begin
+      edtCadDescricaoEntrada4.Enabled := true;
+     end
+     else
+      edtCadDescricaoEntrada4.Enabled := false;
+end;
+
+procedure TfrmEntradas.CheckBox5Click(Sender: TObject);
+begin
+if edtCadValorEntrada5.Enabled = false then
+   begin
+    edtCadValorEntrada5.Enabled := true;
+
+    end
+   else
+      edtCadValorEntrada5.Enabled := false;
+
+   if edtCadDescricaoEntrada5.Enabled = false then
+     begin
+      edtCadDescricaoEntrada5.Enabled := true;
+     end
+     else
+      edtCadDescricaoEntrada5.Enabled := false;
+end;
+
+procedure TfrmEntradas.e1Click(Sender: TObject);
+begin
+   if edtCadValorEntrada.Enabled = false then
+   begin
+    edtCadValorEntrada.Enabled := true;
+
+    end
+   else
+      edtCadValorEntrada.Enabled := false;
+
+   if edtCadDescricaoEntrada.Enabled = false then
+     begin
+      edtCadDescricaoEntrada.Enabled := true;
+     end
+     else
+      edtCadDescricaoEntrada.Enabled := false;
 
 end;
 
