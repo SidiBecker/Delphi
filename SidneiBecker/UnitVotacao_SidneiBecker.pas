@@ -51,8 +51,8 @@ begin
 
   totalVotos := votos1 + votos2;
 
-  chapa1 := votos1 * 100/totalVotos;
-  chapa2 := votos2 * 100/totalVotos;
+  chapa1 := (votos1 * 100 )/totalVotos;
+  chapa2 := (votos2 * 100)/ totalVotos;
 
   lblTotalVotos.Caption :=  IntToStr(totalVotos) + ' votos.';
   lblChapa1.Caption := FormatFloat('0.00',chapa1) + '%';

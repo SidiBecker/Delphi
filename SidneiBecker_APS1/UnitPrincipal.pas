@@ -34,6 +34,14 @@ type
     Label7: TLabel;
     Label8: TLabel;
     Sobre1: TMenuItem;
+    Clculos1: TMenuItem;
+    Gasolina1: TMenuItem;
+    Festa1: TMenuItem;
+    Usurios1: TMenuItem;
+    ToolButton4: TToolButton;
+    ToolButton5: TToolButton;
+    ToolButton6: TToolButton;
+    ToolButton7: TToolButton;
     procedure Timer1Timer(Sender: TObject);
     procedure Fechar1Click(Sender: TObject);
     procedure menuEntradasClick(Sender: TObject);
@@ -42,6 +50,12 @@ type
     procedure Sadas1Click(Sender: TObject);
     procedure ToolButton2Click(Sender: TObject);
     procedure Sobre1Click(Sender: TObject);
+    procedure Gasolina1Click(Sender: TObject);
+    procedure ToolButton4Click(Sender: TObject);
+    procedure Festa1Click(Sender: TObject);
+    procedure ToolButton5Click(Sender: TObject);
+    procedure Usurios1Click(Sender: TObject);
+    procedure ToolButton7Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -55,7 +69,8 @@ implementation
 
 {$R *.dfm}
 
-uses UnitCadastroEntradas, UnitCadastroSaidas, UnitSobre;
+uses UnitCadastroEntradas, UnitCadastroSaidas, UnitSobre, UnitGasolina,
+  UnitFesta, UnitUsuario;
 
 procedure TfrmPrincipal.menuEntradasClick(Sender: TObject);
 begin
@@ -92,6 +107,20 @@ If Application.MessageBox('Tem certeza de que deseja fechar o sistema?',
  End;
 end;
 
+procedure TfrmPrincipal.Festa1Click(Sender: TObject);
+begin
+if frmFesta = nil then
+frmFesta:= TfrmFesta.Create(self);
+frmFesta.Show;
+end;
+
+procedure TfrmPrincipal.Gasolina1Click(Sender: TObject);
+begin
+      if frmGasolina = nil then
+      frmGasolina := TfrmGasolina.Create(self);
+      frmGasolina.Show
+end;
+
 procedure TfrmPrincipal.Timer1Timer(Sender: TObject);
 begin
 footer.Panels[0].Text := 'Data: ' + DateToStr(Date) + ' - Horário: ' +  TimeToStr(Time);
@@ -106,6 +135,28 @@ end;
 procedure TfrmPrincipal.ToolButton2Click(Sender: TObject);
 begin
 Sadas1.Click
+end;
+
+procedure TfrmPrincipal.ToolButton4Click(Sender: TObject);
+begin
+Gasolina1.Click;
+end;
+
+procedure TfrmPrincipal.ToolButton5Click(Sender: TObject);
+begin
+Festa1.Click;
+end;
+
+procedure TfrmPrincipal.ToolButton7Click(Sender: TObject);
+begin
+Usurios1.Click;
+end;
+
+procedure TfrmPrincipal.Usurios1Click(Sender: TObject);
+begin
+    if frmUsuarios= nil then
+    frmUsuarios:= TfrmUsuarios.Create(self);
+    frmUsuarios.Show;
 end;
 
 end.

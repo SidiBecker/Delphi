@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2018/09/26 20:36:37.000.961,=C:\Users\sidib\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2018/11/21 19:25:56.988,=C:\Users\sidib\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2018/11/21 19:26:10.206,C:\Users\sidib\Documents\Embarcadero\Studio\Projects\unitPrincipal.dfm=C:\Users\sidib\Documents\Embarcadero\Studio\Projects\Unit1.dfm</Transaction>
+    <Transaction>2018/11/21 19:26:10.206,C:\Users\sidib\Documents\Embarcadero\Studio\Projects\unitPrincipal.pas=C:\Users\sidib\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2018/11/21 19:26:29.455,C:\Sistemas\SidneiBecker\unitPrincipal.pas=C:\Users\sidib\Documents\Embarcadero\Studio\Projects\unitPrincipal.pas</Transaction>
+    <Transaction>2018/11/21 19:26:29.455,C:\Sistemas\SidneiBecker\unitPrincipal.dfm=C:\Users\sidib\Documents\Embarcadero\Studio\Projects\unitPrincipal.dfm</Transaction>
+    <Transaction>2018/11/21 19:26:37.811,C:\Sistemas\SidneiBecker\AV2_SidneiBecker.dproj=C:\Users\sidib\Documents\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
+  </Transactions>
+</BorlandProject>
