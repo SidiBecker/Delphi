@@ -5,7 +5,7 @@ object frmSaidas: TfrmSaidas
   BorderStyle = bsSingle
   Caption = 'Sa'#237'das'
   ClientHeight = 321
-  ClientWidth = 645
+  ClientWidth = 705
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -47,7 +47,7 @@ object frmSaidas: TfrmSaidas
     ParentFont = False
   end
   object btnCalcular: TBitBtn
-    Left = 376
+    Left = 436
     Top = 245
     Width = 80
     Height = 57
@@ -114,7 +114,7 @@ object frmSaidas: TfrmSaidas
     OnClick = btnCalcularClick
   end
   object btnFechar: TBitBtn
-    Left = 557
+    Left = 617
     Top = 245
     Width = 80
     Height = 58
@@ -181,7 +181,7 @@ object frmSaidas: TfrmSaidas
     OnClick = btnFecharClick
   end
   object btnLimpar: TBitBtn
-    Left = 471
+    Left = 531
     Top = 245
     Width = 80
     Height = 58
@@ -263,17 +263,17 @@ object frmSaidas: TfrmSaidas
   object GroupBox1: TGroupBox
     Left = 8
     Top = 69
-    Width = 344
+    Width = 422
     Height = 233
-    Color = clTeal
+    Color = clBlack
     ParentBackground = False
     ParentColor = False
     TabOrder = 4
     object GroupBoxDescricao: TGroupBox
-      Left = 16
-      Top = 19
+      Left = 135
+      Top = 11
       Width = 147
-      Height = 198
+      Height = 206
       Caption = 'Descri'#231#227'o'
       Color = clWhite
       Font.Charset = DEFAULT_CHARSET
@@ -285,54 +285,60 @@ object frmSaidas: TfrmSaidas
       ParentColor = False
       ParentFont = False
       TabOrder = 0
-    end
-    object edtDescricao1: TEdit
-      Left = 32
-      Top = 48
-      Width = 121
-      Height = 21
-      TabOrder = 1
-    end
-    object edtDescricao2: TEdit
-      Left = 32
-      Top = 75
-      Width = 121
-      Height = 21
-      TabOrder = 2
-    end
-    object edtDescricao3: TEdit
-      Left = 32
-      Top = 102
-      Width = 121
-      Height = 21
-      TabOrder = 3
-    end
-    object edtDescricao4: TEdit
-      Left = 32
-      Top = 129
-      Width = 121
-      Height = 21
-      TabOrder = 4
-    end
-    object edtDescricao5: TEdit
-      Left = 32
-      Top = 156
-      Width = 121
-      Height = 21
-      TabOrder = 5
-    end
-    object edtDescricao6: TEdit
-      Left = 32
-      Top = 183
-      Width = 121
-      Height = 21
-      TabOrder = 6
+      object edtDescricao1: TEdit
+        Left = 10
+        Top = 24
+        Width = 121
+        Height = 24
+        Enabled = False
+        TabOrder = 0
+      end
+      object edtDescricao2: TEdit
+        Left = 10
+        Top = 54
+        Width = 121
+        Height = 24
+        Enabled = False
+        TabOrder = 1
+      end
+      object edtDescricao3: TEdit
+        Left = 10
+        Top = 84
+        Width = 121
+        Height = 24
+        Enabled = False
+        TabOrder = 2
+      end
+      object edtDescricao4: TEdit
+        Left = 10
+        Top = 114
+        Width = 121
+        Height = 24
+        Enabled = False
+        TabOrder = 3
+      end
+      object edtDescricao5: TEdit
+        Left = 10
+        Top = 145
+        Width = 121
+        Height = 24
+        Enabled = False
+        TabOrder = 4
+      end
+      object edtDescricao6: TEdit
+        Left = 10
+        Top = 175
+        Width = 121
+        Height = 24
+        Enabled = False
+        TabOrder = 5
+      end
     end
     object GroupBoxValor: TGroupBox
-      Left = 169
-      Top = 19
-      Width = 160
-      Height = 198
+      Left = 296
+      Top = 11
+      Width = 97
+      Height = 205
       Caption = 'Valor'
       Color = clWhite
       Font.Charset = DEFAULT_CHARSET
@@ -343,57 +349,134 @@ object frmSaidas: TfrmSaidas
       ParentBackground = False
       ParentColor = False
       ParentFont = False
-      TabOrder = 7
+      TabOrder = 1
+      object edtValor1: TEdit
+        Left = 15
+        Top = 24
+        Width = 70
+        Height = 24
+        Enabled = False
+        TabOrder = 0
+      end
+      object edtValor2: TEdit
+        Left = 15
+        Top = 54
+        Width = 70
+        Height = 24
+        Enabled = False
+        TabOrder = 1
+      end
+      object edtValor3: TEdit
+        Left = 15
+        Top = 85
+        Width = 70
+        Height = 24
+        Enabled = False
+        TabOrder = 2
+      end
+      object edtValor4: TEdit
+        Left = 15
+        Top = 115
+        Width = 70
+        Height = 24
+        Enabled = False
+        TabOrder = 3
+      end
+      object edtValor5: TEdit
+        Left = 15
+        Top = 145
+        Width = 70
+        Height = 24
+        Enabled = False
+        TabOrder = 4
+      end
+      object edtValor6: TEdit
+        Left = 15
+        Top = 175
+        Width = 70
+        Height = 24
+        Enabled = False
+        TabOrder = 5
+      end
     end
   end
-  object edtValor1: TEdit
-    Left = 200
-    Top = 117
-    Width = 121
-    Height = 21
-    TabOrder = 5
-  end
-  object edtValor2: TEdit
-    Left = 200
-    Top = 144
-    Width = 121
-    Height = 21
-    TabOrder = 6
-  end
-  object edtValor3: TEdit
-    Left = 200
-    Top = 171
-    Width = 121
-    Height = 21
-    TabOrder = 7
-  end
-  object edtValor4: TEdit
-    Left = 200
-    Top = 198
-    Width = 121
-    Height = 21
-    TabOrder = 8
-  end
-  object edtValor5: TEdit
-    Left = 200
-    Top = 225
-    Width = 121
-    Height = 21
-    TabOrder = 9
-  end
-  object edtValor6: TEdit
-    Left = 200
-    Top = 252
-    Width = 121
-    Height = 21
-    TabOrder = 10
-  end
   object painelResultado: TMemo
-    Left = 376
+    Left = 436
     Top = 8
     Width = 261
     Height = 231
     Enabled = False
-    TabOrder = 11
+    Lines.Strings = (
+      'Informe o total de entradas, cadastre as sa'#237'das e '
+      'clique em calcular para gerar o relat'#243'rio.')
+    TabOrder = 5
+  end
+  object GroupBox2: TGroupBox
+    Left = 22
+    Top = 80
+    Width = 101
+    Height = 206
+    Caption = 'Ativar Sa'#237'das'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -15
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 6
+    object e1: TCheckBox
+      Left = 20
+      Top = 26
+      Width = 60
+      Height = 17
+      Caption = 'N'#186' 1'
+      TabOrder = 0
+      OnClick = e1Click
+    end
+    object CheckBox2: TCheckBox
+      Left = 20
+      Top = 55
+      Width = 60
+      Height = 17
+      Caption = 'N'#186' 2'
+      TabOrder = 1
+      OnClick = CheckBox2Click
+    end
+    object CheckBox3: TCheckBox
+      Left = 20
+      Top = 85
+      Width = 60
+      Height = 17
+      Caption = 'N'#186' 3'
+      TabOrder = 2
+      OnClick = CheckBox3Click
+    end
+    object CheckBox4: TCheckBox
+      Left = 20
+      Top = 115
+      Width = 60
+      Height = 17
+      Caption = 'N'#186' 4'
+      TabOrder = 3
+      OnClick = CheckBox4Click
+    end
+    object CheckBox5: TCheckBox
+      Left = 20
+      Top = 145
+      Width = 60
+      Height = 17
+      Caption = 'N'#186' 5'
+      TabOrder = 4
+      OnClick = CheckBox5Click
+    end
+    object n6: TCheckBox
+      Left = 20
+      Top = 175
+      Width = 60
+      Height = 17
+      Caption = 'N'#186' 6'
+      TabOrder = 5
+      OnClick = n6Click
+    end
   end
 end

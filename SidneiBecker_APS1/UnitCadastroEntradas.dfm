@@ -174,9 +174,9 @@ object frmEntradas: TfrmEntradas
   end
   object painelResultado: TMemo
     Left = 8
-    Top = 242
+    Top = 233
     Width = 265
-    Height = 160
+    Height = 177
     Enabled = False
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
@@ -257,9 +257,9 @@ object frmEntradas: TfrmEntradas
     OnClick = btnLimparClick
   end
   object grbxDescricao: TGroupBox
-    Left = 16
+    Left = 115
     Top = 42
-    Width = 146
+    Width = 137
     Height = 185
     Caption = 'Descri'#231#227'o'
     Color = cl3DLight
@@ -277,6 +277,7 @@ object frmEntradas: TfrmEntradas
       Top = 22
       Width = 121
       Height = 26
+      Enabled = False
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clBlack
       Font.Height = -15
@@ -290,6 +291,7 @@ object frmEntradas: TfrmEntradas
       Top = 54
       Width = 121
       Height = 26
+      Enabled = False
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clBlack
       Font.Height = -15
@@ -303,6 +305,7 @@ object frmEntradas: TfrmEntradas
       Top = 86
       Width = 121
       Height = 26
+      Enabled = False
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clBlack
       Font.Height = -15
@@ -316,6 +319,7 @@ object frmEntradas: TfrmEntradas
       Top = 118
       Width = 121
       Height = 26
+      Enabled = False
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clBlack
       Font.Height = -15
@@ -329,6 +333,7 @@ object frmEntradas: TfrmEntradas
       Top = 150
       Width = 121
       Height = 26
+      Enabled = False
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clBlack
       Font.Height = -15
@@ -339,11 +344,11 @@ object frmEntradas: TfrmEntradas
     end
   end
   object grpbxValores: TGroupBox
-    Left = 196
+    Left = 258
     Top = 42
-    Width = 150
+    Width = 101
     Height = 185
-    Caption = 'Valores'
+    Caption = 'Valores (R$)'
     Color = cl3DLight
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
@@ -357,37 +362,101 @@ object frmEntradas: TfrmEntradas
     object edtCadValorEntrada: TEdit
       Left = 15
       Top = 22
-      Width = 121
+      Width = 70
       Height = 26
+      Enabled = False
       TabOrder = 0
     end
     object edtCadValorEntrada2: TEdit
       Left = 15
       Top = 54
-      Width = 121
+      Width = 70
       Height = 26
+      Enabled = False
       TabOrder = 1
     end
     object edtCadValorEntrada3: TEdit
       Left = 15
       Top = 86
-      Width = 121
+      Width = 70
       Height = 26
+      Enabled = False
       TabOrder = 2
     end
     object edtCadValorEntrada4: TEdit
       Left = 15
       Top = 118
-      Width = 121
+      Width = 70
       Height = 26
+      Enabled = False
       TabOrder = 3
     end
     object edtCadValorEntrada5: TEdit
       Left = 15
       Top = 150
-      Width = 121
+      Width = 70
       Height = 26
+      Enabled = False
       TabOrder = 4
+    end
+  end
+  object GroupBox1: TGroupBox
+    Left = 8
+    Top = 42
+    Width = 101
+    Height = 185
+    Caption = 'Ativar Entrada'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -15
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 6
+    object e1: TCheckBox
+      Left = 20
+      Top = 26
+      Width = 60
+      Height = 17
+      Caption = 'N'#186' 1'
+      TabOrder = 0
+      OnClick = e1Click
+    end
+    object CheckBox2: TCheckBox
+      Left = 20
+      Top = 58
+      Width = 60
+      Height = 17
+      Caption = 'N'#186' 2'
+      TabOrder = 1
+      OnClick = CheckBox2Click
+    end
+    object CheckBox3: TCheckBox
+      Left = 20
+      Top = 90
+      Width = 60
+      Height = 17
+      Caption = 'N'#186' 3'
+      TabOrder = 2
+      OnClick = CheckBox3Click
+    end
+    object CheckBox4: TCheckBox
+      Left = 20
+      Top = 122
+      Width = 60
+      Height = 17
+      Caption = 'N'#186' 4'
+      TabOrder = 3
+      OnClick = CheckBox4Click
+    end
+    object CheckBox5: TCheckBox
+      Left = 20
+      Top = 154
+      Width = 60
+      Height = 17
+      Caption = 'N'#186' 5'
+      TabOrder = 4
+      OnClick = CheckBox5Click
     end
   end
 end

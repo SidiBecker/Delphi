@@ -30,10 +30,23 @@ type
     edtValor5: TEdit;
     edtValor6: TEdit;
     painelResultado: TMemo;
+    GroupBox2: TGroupBox;
+    e1: TCheckBox;
+    CheckBox2: TCheckBox;
+    CheckBox3: TCheckBox;
+    CheckBox4: TCheckBox;
+    CheckBox5: TCheckBox;
+    n6: TCheckBox;
     procedure FormClose(Sender: TObject; var Action: TCloseAction);
     procedure btnFecharClick(Sender: TObject);
     procedure btnCalcularClick(Sender: TObject);
     procedure btnLimparClick(Sender: TObject);
+    procedure e1Click(Sender: TObject);
+    procedure CheckBox2Click(Sender: TObject);
+    procedure CheckBox3Click(Sender: TObject);
+    procedure CheckBox4Click(Sender: TObject);
+    procedure CheckBox5Click(Sender: TObject);
+    procedure n6Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -199,13 +212,116 @@ edtValor5.Clear;
 edtValor6.Clear;
 
 painelResultado.Clear;
+painelResultado.Lines.Add('Informe o total de entradas, cadastre as saídas e clique em calcular para gerar o relatório.');
 painelResultado.Enabled := false;
 
+end;
+
+procedure TfrmSaidas.CheckBox2Click(Sender: TObject);
+begin
+if edtDescricao2.Enabled = false then
+begin
+  edtDescricao2.Enabled := true;
+end
+else
+edtDescricao2.Enabled := false;
+
+if edtValor2.Enabled = false then
+begin
+ edtValor2.Enabled := true;
+end
+else
+edtValor2.Enabled := false;
+end;
+
+procedure TfrmSaidas.CheckBox3Click(Sender: TObject);
+begin
+if edtDescricao3.Enabled = false then
+begin
+  edtDescricao3.Enabled := true;
+end
+else
+edtDescricao3.Enabled := false;
+
+if edtValor3.Enabled = false then
+begin
+ edtValor3.Enabled := true;
+end
+else
+edtValor3.Enabled := false;
+end;
+
+procedure TfrmSaidas.CheckBox4Click(Sender: TObject);
+begin
+if edtDescricao4.Enabled = false then
+begin
+  edtDescricao4.Enabled := true;
+end
+else
+edtDescricao4.Enabled := false;
+
+if edtValor4.Enabled = false then
+begin
+ edtValor4.Enabled := true;
+end
+else
+edtValor4.Enabled := false;
+end;
+
+procedure TfrmSaidas.CheckBox5Click(Sender: TObject);
+begin
+   if edtDescricao5.Enabled = false then
+begin
+  edtDescricao5.Enabled := true;
+end
+else
+edtDescricao5.Enabled := false;
+
+if edtValor5.Enabled = false then
+begin
+ edtValor5.Enabled := true;
+end
+else
+edtValor5.Enabled := false;
+end;
+
+procedure TfrmSaidas.e1Click(Sender: TObject);
+begin
+if edtDescricao1.Enabled = false then
+begin
+  edtDescricao1.Enabled := true;
+end
+else
+edtDescricao1.Enabled := false;
+
+if edtValor1.Enabled = false then
+begin
+ edtValor1.Enabled := true;
+end
+else
+edtValor1.Enabled := false;
 end;
 
 procedure TfrmSaidas.FormClose(Sender: TObject; var Action: TCloseAction);
 begin
   FreeAndNil(frmSaidas);
+end;
+
+procedure TfrmSaidas.n6Click(Sender: TObject);
+begin
+if edtDescricao6.Enabled = false then
+begin
+  edtDescricao6.Enabled := true;
+end
+else
+edtDescricao6.Enabled := false;
+
+if edtValor6.Enabled = false then
+begin
+ edtValor6.Enabled := true;
+end
+else
+edtValor6.Enabled := false;
 end;
 
 end.
