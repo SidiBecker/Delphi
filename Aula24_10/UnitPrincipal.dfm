@@ -3,8 +3,8 @@ object FormPrincipal: TFormPrincipal
   Top = 0
   BorderStyle = bsSingle
   Caption = 'GTI - Gest'#227'o da Tecnologia da Informa'#231#227'o'
-  ClientHeight = 327
-  ClientWidth = 665
+  ClientHeight = 450
+  ClientWidth = 749
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -22,8 +22,8 @@ object FormPrincipal: TFormPrincipal
   object Image1: TImage
     Left = 0
     Top = 35
-    Width = 665
-    Height = 273
+    Width = 749
+    Height = 396
     Align = alClient
     Picture.Data = {
       0A544A504547496D6167650FAA1600FFD8FFE000104A46494600010101004800
@@ -46451,13 +46451,14 @@ object FormPrincipal: TFormPrincipal
   object ToolBar1: TToolBar
     Left = 0
     Top = 0
-    Width = 665
+    Width = 749
     Height = 35
     ButtonHeight = 35
     ButtonWidth = 35
     Caption = 'ToolBar1'
     Images = ImageList1
     TabOrder = 0
+    ExplicitWidth = 665
     object btnCidade: TToolButton
       Left = 0
       Top = 0
@@ -46499,23 +46500,24 @@ object FormPrincipal: TFormPrincipal
       ImageIndex = 3
       Style = tbsSeparator
     end
-    object btnVendas: TToolButton
-      Left = 113
-      Top = 0
-      Cursor = crHandPoint
-      Hint = 'Vendas'
-      Caption = 'btnVendas'
-      ImageIndex = 4
-      ParentShowHint = False
-      ShowHint = True
-    end
     object btnRelFornecedores: TToolButton
-      Left = 148
+      Left = 113
       Top = 0
       Cursor = crHandPoint
       Hint = 'Relat'#243'rio Fornecedores'
       Caption = 'btnRelFornecedores'
       ImageIndex = 5
+      ParentShowHint = False
+      ShowHint = True
+      OnClick = btnRelFornecedoresClick
+    end
+    object btnVendas: TToolButton
+      Left = 148
+      Top = 0
+      Cursor = crHandPoint
+      Hint = 'Vendas'
+      Caption = 'btnVendas'
+      ImageIndex = 4
       ParentShowHint = False
       ShowHint = True
     end
@@ -46551,8 +46553,8 @@ object FormPrincipal: TFormPrincipal
   end
   object Footer: TStatusBar
     Left = 0
-    Top = 308
-    Width = 665
+    Top = 431
+    Width = 749
     Height = 19
     Panels = <
       item
@@ -46575,6 +46577,8 @@ object FormPrincipal: TFormPrincipal
         Text = 'Vers'#227'o do Sistema: 0.0.1'
         Width = 50
       end>
+    ExplicitTop = 308
+    ExplicitWidth = 665
   end
   object MainMenuPrincipal: TMainMenu
     Images = ImageList1
@@ -46616,6 +46620,10 @@ object FormPrincipal: TFormPrincipal
     end
     object Consultas1: TMenuItem
       Caption = 'C&onsultas'
+      object Fornecedores: TMenuItem
+        Caption = 'Fornecedores'
+        OnClick = FornecedoresClick
+      end
     end
     object Relatrios1: TMenuItem
       Caption = '&Relat'#243'rios'
@@ -46665,7 +46673,7 @@ object FormPrincipal: TFormPrincipal
     Left = 112
     Top = 88
     Bitmap = {
-      494C01010C0018002C0010001000FFFFFFFFFF10FFFFFFFFFFFFFFFF424D3600
+      494C01010C001800300010001000FFFFFFFFFF10FFFFFFFFFFFFFFFF424D3600
       0000000000003600000028000000400000004000000001002000000000000040
       0000000000000000000000000000000000000000000000000000000000000000
       0000000000000000000000000000000000000000000000000000000000000000

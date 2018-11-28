@@ -1,0 +1,58 @@
+object DM: TDM
+  OldCreateOrder = False
+  Height = 266
+  Width = 402
+  object FDConnection1: TFDConnection
+    Params.Strings = (
+      'Database=projetodelphi'
+      'User_Name=projetodelphi'
+      'Password=1234'
+      'Server=172.16.120.74'
+      'DriverID=MySQL')
+    Connected = True
+    LoginPrompt = False
+    Left = 32
+    Top = 16
+  end
+  object FDTransaction1: TFDTransaction
+    Connection = FDConnection1
+    Left = 32
+    Top = 80
+  end
+  object FDPhysMySQLDriverLink1: TFDPhysMySQLDriverLink
+    VendorLib = 'C:\Sistemas\Aula24_10\Projeto\libmysql.dll'
+    Left = 32
+    Top = 144
+  end
+  object tbCidade: TFDTable
+    IndexFieldNames = 'cod_cidade'
+    Connection = FDConnection1
+    UpdateOptions.UpdateTableName = 'projetodelphi.cidade'
+    TableName = 'projetodelphi.cidade'
+    Left = 120
+    Top = 16
+    object tbCidadecod_cidade: TFDAutoIncField
+      FieldName = 'cod_cidade'
+      Origin = 'cod_cidade'
+      ProviderFlags = [pfInWhere, pfInKey]
+    end
+    object tbCidadenome_cidade: TStringField
+      FieldName = 'nome_cidade'
+      Origin = 'nome_cidade'
+      Required = True
+      Size = 100
+    end
+    object tbCidadeuf_cidade: TStringField
+      AutoGenerateValue = arDefault
+      FieldName = 'uf_cidade'
+      Origin = 'uf_cidade'
+      FixedChar = True
+      Size = 2
+    end
+  end
+  object dsCidade: TDataSource
+    DataSet = tbCidade
+    Left = 120
+    Top = 88
+  end
+end

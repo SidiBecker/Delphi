@@ -44,6 +44,7 @@ type
     Image1: TImage;
     Footer: TStatusBar;
     Timer1: TTimer;
+    Fornecedores: TMenuItem;
     procedure Sair1Click(Sender: TObject);
     procedure Timer1Timer(Sender: TObject);
     procedure menuCadCidadeClick(Sender: TObject);
@@ -54,6 +55,8 @@ type
     procedure menuCadClienteClick(Sender: TObject);
     procedure menuCadGeraisClick(Sender: TObject);
     procedure btnClienteClick(Sender: TObject);
+    procedure FornecedoresClick(Sender: TObject);
+    procedure btnRelFornecedoresClick(Sender: TObject);
   private
     { Private declarations }
   public
@@ -67,7 +70,8 @@ implementation
 
 {$R *.dfm}
 
-uses UnitCidades, UnitFornecedores, UnitEstados, UnitClientes, UnitGerais;
+uses UnitCidades, UnitFornecedores, UnitEstados, UnitClientes, UnitGerais,
+  UnitConsultaFornecedores;
 
 procedure TFormPrincipal.btnCidadeClick(Sender: TObject);
 begin
@@ -82,6 +86,19 @@ end;
 procedure TFormPrincipal.btnFornecedorClick(Sender: TObject);
 begin
   menuCadFornecedor.Click;
+end;
+
+procedure TFormPrincipal.btnRelFornecedoresClick(Sender: TObject);
+begin
+Fornecedores1.Click;
+end;
+
+procedure TFormPrincipal.FornecedoresClick(Sender: TObject);
+begin
+      if frmConsultaFornecedor = nil then
+    frmConsultaFornecedor := TfrmConsultaFornecedor.Create(self);
+
+    frmConsultaFornecedor.Show;
 end;
 
 procedure TFormPrincipal.menuCadCidadeClick(Sender: TObject);

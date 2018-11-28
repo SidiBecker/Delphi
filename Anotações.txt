@@ -55,3 +55,56 @@ Fechar -> Evento onClose: FreeAndNil(frmCidade);
 
 
 -/--/--/--/--/--/--/--/--/--/--/--/--/--/--/--/--
+
+
+
+DATA MODULE --> BANCO 
+NEW
+FILE
+OTHER 
+DELPHI FILES
+DATA MODULE
+
+Componente -> ABA FireDAC / TFDCOnnection (Informar o banco, usuario e senha)
+Inserir TFGTransaction no DataModule
+
+Componente -> ABA FireDAC Links --> Escolher
+
+Componente -> ABA FireDAC / Table -
+Definir
+name
+table_name
+Duplo click -> add all fields
+
+
+Componente -> ABA Data Access (p/ cada table)
+editar nome
+DataSet -> colocar table
+
+Nas Unit's, ir em File -> Use Unit e selecionar a UnitDM
+
+Usar Data Controls para os componentes
+
+
+Para puxar dados do banco -> Propriedades Data Source e DataField
+
+Adicionar o componente DBNavigator
+
+Selecionar data source
+
+
+Para buscar uma lista -> ListLokupComboBox
+List source -> tabela
+ListField -> O que mostra
+KeyField -> Chave que sera mandada
+
+
+
+Criar campo estranjeiro
+Na table - New field
+
+
+pesquisa 
+DM.tbForneceor.Open();
+DM.tbForneceor.Filter := 'UPPER(nome_fornecedor) like ' + QuotedStr(UpperCase('%' + edtPesquisa.Text + '%'));
+DM.tbForneceor.Filtered := true;

@@ -20,13 +20,114 @@ object frmCidade: TfrmCidade
   OnClose = FormClose
   PixelsPerInch = 96
   TextHeight = 13
+  object cdCidade: TLabel
+    Left = 8
+    Top = 8
+    Width = 99
+    Height = 13
+    Caption = 'C'#211'DIGO DA CIDADE'
+  end
+  object Label2: TLabel
+    Left = 8
+    Top = 56
+    Width = 70
+    Height = 13
+    Caption = 'NOME CIDADE'
+  end
+  object Label3: TLabel
+    Left = 360
+    Top = 56
+    Width = 40
+    Height = 13
+    Caption = 'ESTADO'
+  end
+  object lblCodigo: TDBText
+    Left = 8
+    Top = 27
+    Width = 65
+    Height = 17
+    DataField = 'cod_cidade'
+    DataSource = DM.dsCidade
+  end
   object btnFechar: TBitBtn
-    Left = 192
-    Top = 168
-    Width = 75
-    Height = 25
+    Left = 360
+    Top = 120
+    Width = 80
+    Height = 33
     Caption = 'Fechar'
     TabOrder = 0
     OnClick = btnFecharClick
+  end
+  object edtCidade: TDBEdit
+    Left = 8
+    Top = 75
+    Width = 346
+    Height = 21
+    DataField = 'nome_cidade'
+    DataSource = DM.dsCidade
+    TabOrder = 1
+  end
+  object cbxEstado: TDBComboBox
+    Left = 360
+    Top = 75
+    Width = 80
+    Height = 21
+    DataField = 'uf_cidade'
+    DataSource = DM.dsCidade
+    Items.Strings = (
+      'AC'
+      'AL'
+      'AM'
+      'AP'
+      'BA'
+      'CE'
+      'DF'
+      'ES'
+      'GO'
+      'MA'
+      'MG'
+      'MS'
+      'MT'
+      'PA'
+      'PB'
+      'PE'
+      'PI'
+      'PR'
+      'RJ'
+      'RN'
+      'RO'
+      'RR'
+      'RS'
+      'SC'
+      'SE'
+      'SP'
+      'TO')
+    Sorted = True
+    TabOrder = 2
+  end
+  object DBNavigator1: TDBNavigator
+    Left = 8
+    Top = 119
+    Width = 340
+    Height = 33
+    Cursor = crHandPoint
+    DataSource = DM.dsCidade
+    Flat = True
+    Hints.Strings = (
+      'Primeiro registro'
+      'Registro anterior'
+      'Pr'#243'ximo registro'
+      'Ultimo registro'
+      'Inserir registro'
+      'Deletar regsitro'
+      'Editar registro'
+      'Salvar regisro'
+      'Cancelar '
+      'Atualizar'
+      'Aplicar mudan'#231'as'
+      'Cancelar mudancas')
+    ParentShowHint = False
+    ShowHint = True
+    TabOrder = 3
   end
 end

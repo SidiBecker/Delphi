@@ -1,0 +1,152 @@
+object frmConsultaFornecedor: TfrmConsultaFornecedor
+  Left = 0
+  Top = 0
+  BorderStyle = bsSingle
+  Caption = 'Consulta Fornecedor'
+  ClientHeight = 289
+  ClientWidth = 702
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  FormStyle = fsMDIChild
+  OldCreateOrder = False
+  Position = poDesktopCenter
+  Visible = True
+  OnClose = FormClose
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Label1: TLabel
+    Left = 8
+    Top = 13
+    Width = 104
+    Height = 13
+    Caption = 'Pesquisar Fornecedor'
+  end
+  object BitBtn1: TBitBtn
+    Left = 619
+    Top = 256
+    Width = 75
+    Height = 25
+    Caption = 'Fechar'
+    TabOrder = 0
+    OnClick = BitBtn1Click
+  end
+  object edtPesquisa: TMaskEdit
+    Left = 8
+    Top = 32
+    Width = 605
+    Height = 21
+    TabOrder = 1
+    Text = ''
+  end
+  object btnPesquisar: TBitBtn
+    Left = 619
+    Top = 30
+    Width = 75
+    Height = 25
+    Caption = 'Pesquisar'
+    TabOrder = 2
+  end
+  object DBGrid1: TDBGrid
+    Left = 8
+    Top = 59
+    Width = 681
+    Height = 174
+    DataSource = DM.dsFornecedor
+    TabOrder = 3
+    TitleFont.Charset = DEFAULT_CHARSET
+    TitleFont.Color = clWindowText
+    TitleFont.Height = -11
+    TitleFont.Name = 'Tahoma'
+    TitleFont.Style = []
+    Columns = <
+      item
+        Alignment = taCenter
+        Expanded = False
+        FieldName = 'cod_fornecedor'
+        Title.Alignment = taCenter
+        Title.Caption = 'C'#243'd.'
+        Width = 25
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = 'nome_fornecedor'
+        Title.Alignment = taCenter
+        Title.Caption = 'Nome'
+        Width = 150
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = 'endereco'
+        Title.Alignment = taCenter
+        Title.Caption = 'Endere'#231'o'
+        Width = 120
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = 'bairro'
+        Title.Alignment = taCenter
+        Title.Caption = 'Bairro'
+        Width = 50
+        Visible = True
+      end
+      item
+        Alignment = taCenter
+        Expanded = False
+        FieldName = 'cod_cidade'
+        Title.Alignment = taCenter
+        Title.Caption = 'Cidade'
+        Width = 60
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = 'nome_cidade'
+        Title.Alignment = taCenter
+        Title.Caption = 'Cidade'
+        Width = 120
+        Visible = True
+      end
+      item
+        Alignment = taCenter
+        Expanded = False
+        FieldName = 'cep'
+        Title.Alignment = taCenter
+        Title.Caption = 'CEP'
+        Width = 80
+        Visible = True
+      end
+      item
+        Alignment = taCenter
+        Expanded = False
+        FieldName = 'cnpj'
+        Title.Alignment = taCenter
+        Title.Caption = 'CNPJ'
+        Width = 120
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = 'email'
+        Title.Alignment = taCenter
+        Title.Caption = 'E-mail'
+        Width = 120
+        Visible = True
+      end
+      item
+        Alignment = taCenter
+        Expanded = False
+        FieldName = 'telefone'
+        Title.Alignment = taCenter
+        Title.Caption = 'Telefone'
+        Width = 100
+        Visible = True
+      end>
+  end
+end
